@@ -162,7 +162,6 @@ def shell(*, R: str, title: str, desc: str, canonical: str, body: str,
     for href, label, key in [
         (f"{R}shop/", "Shop", "shop"),
         (f"{R}shop/spanish/", "Spanish", "spanish"),
-        (f"{R}custom/", "Custom Stamps", "custom"),
         (f"{R}contact/", "Contact", "contact"),
     ]:
         cur = ' aria-current="page"' if key == active else ""
@@ -189,7 +188,11 @@ def shell(*, R: str, title: str, desc: str, canonical: str, body: str,
 {extra_head}</head>
 <body>
 <header class="site"><div class="wrap masthead">
-  <a class="logo" href="{R}">GRADING<em>STAMPS</em></a>
+  <a class="logo" href="{R}" aria-label="GradingStamps — home">
+    <span class="lg-word">GRADING</span>
+    <span class="lg-tiles" aria-hidden="true"><i>S</i><i>T</i><i>A</i><i>M</i><i>P</i><i>S</i></span>
+    <span class="lg-rule" aria-hidden="true"></span>
+  </a>
   <span class="byline">From {E(C.MAKER)} · 20+ years</span>
   <nav class="main" aria-label="Main">
     {' '.join(nav)}
@@ -211,7 +214,7 @@ def shell(*, R: str, title: str, desc: str, canonical: str, body: str,
     <div>
       <b>Shop</b><br>
       <a href="{R}shop/">All stamps</a><br>
-      <a href="{R}custom/">Custom stamps</a>
+      <a href="{R}shop/spanish/">Spanish stamps</a>
     </div>
   </div>
   <div class="maker">© {year} {E(C.MAKER)} · Pre-ink stamps for teachers and schools</div>
@@ -303,9 +306,9 @@ def main() -> None:
   <div class="cols">
     <div><h3>A real family business</h3><p>{E(C.FOUNDED_BLURB)}</p></div>
     <div><h3>Pre-ink, not ink pad</h3><p>{E(C.MOUNT_BLURB)}</p></div>
-    <div><h3>Can't find it? We'll make it</h3><p>Need wording nobody sells?
-      We manufacture custom pre-ink stamps from your design —
-      <a href="custom/">tell us what you need</a>.</p></div>
+    <div><h3>Talk to a person</h3><p>We're a small family shop and we answer
+      our own email — questions about an order or bulk pricing for a school are
+      always welcome. <a href="contact/">Contact us</a>.</p></div>
   </div>
 </div></section>
 </main>"""
@@ -434,54 +437,6 @@ def main() -> None:
             extra_head=f'<script type="application/ld+json">{jsonld}</script>\n'))
         urls.append(page_url(path))
 
-    # ---------------- custom ----------------
-    custom_body = f"""
-<main><div class="wrap page">
-  <span class="stampchip">Custom stamps</span>
-  <h1>Design a stamp nobody sells</h1>
-  <p>Need your name, your wording, or your own artwork on a pre-ink stamp?
-  That's been our specialty for two decades — personalized teacher stamps,
-  "From the desk of…" stamps, return address stamps, school office stamps.
-  Tell us what you want and we'll reply with a proof and a quote, usually
-  within a couple of days.</p>
-  <form id="customForm">
-    <div class="field"><label for="cName">Your name</label>
-      <input id="cName" type="text" autocomplete="name"></div>
-    <div class="field"><label for="cText">What should the stamp say?</label>
-      <textarea id="cText" placeholder="e.g.  From the classroom of Mrs. Rivera — Room 12"></textarea></div>
-    <div class="field"><label for="cSize">Rough size</label>
-      <select id="cSize">
-        <option>Small — about 1½" × ⅝"</option>
-        <option selected>Medium — about 2¼" × 1"</option>
-        <option>Large — about 2¾" × 2"</option>
-        <option>Not sure — recommend one</option>
-      </select></div>
-    <div class="field"><label for="cNotes">Anything else? (artwork, deadline, quantity)</label>
-      <textarea id="cNotes"></textarea></div>
-    <button type="submit" class="btn">Compose order email</button>
-  </form>
-  <div class="notice">The button opens a ready-to-send email to
-  <b>{C.CONTACT_EMAIL}</b> — attach artwork to that email if you have any.
-  Prefer the phone? Call <a href="{C.PHONE_HREF}">{C.PHONE_DISPLAY}</a>.</div>
-</div></main>
-<script>
-document.getElementById('customForm').addEventListener('submit', function (e) {{
-  e.preventDefault();
-  var v = function (id) {{ return document.getElementById(id).value; }};
-  var body = 'Name: ' + v('cName') + '\\n\\nStamp text:\\n' + v('cText') +
-             '\\n\\nSize: ' + v('cSize') + '\\n\\nNotes:\\n' + v('cNotes');
-  location.href = 'mailto:{C.CONTACT_EMAIL}' +
-    '?subject=' + encodeURIComponent('Custom stamp request') +
-    '&body=' + encodeURIComponent(body);
-}});
-</script>"""
-    write("custom/index.html", shell(
-        R="../", title="Custom Rubber Stamps — Design Your Own | GradingStamps",
-        desc="We manufacture custom pre-ink rubber stamps from your wording or artwork — "
-             "personalized teacher stamps, address stamps, and school stamps.",
-        canonical=page_url("custom/index.html"), body=custom_body, active="custom"))
-    urls.append(page_url("custom/index.html"))
-
     # ---------------- contact ----------------
     contact_body = f"""
 <main><div class="wrap page">
@@ -490,8 +445,8 @@ document.getElementById('customForm').addEventListener('submit', function (e) {{
   <p>We're a small family shop, and we answer our own email.</p>
   <p><b>Email:</b> <a href="mailto:{C.CONTACT_EMAIL}">{C.CONTACT_EMAIL}</a><br>
      <b>Phone:</b> <a href="{C.PHONE_HREF}">{C.PHONE_DISPLAY}</a></p>
-  <p>Questions about an order, a stamp you can't find, bulk pricing for a school,
-  or a custom design — all welcome.</p>
+  <p>Questions about an order, a stamp you can't find, or bulk pricing
+  for a school — all welcome.</p>
 </div></main>"""
     write("contact/index.html", shell(
         R="../", title="Contact Us | GradingStamps",
