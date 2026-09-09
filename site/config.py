@@ -8,6 +8,9 @@ PAYPAL_BUSINESS = "CustomerService@GradingStamps.com"
 SITE_URL = "https://www.gradingstamps.com"   # canonical, no trailing slash
 SITE_NAME = "GradingStamps"
 DOMAIN = "www.gradingstamps.com"             # written to docs/CNAME
+# Keep False until the domain's DNS points at GitHub Pages — a CNAME file
+# makes GitHub redirect the *.github.io preview to the (not-yet-live) domain.
+WRITE_CNAME = False
 
 CONTACT_EMAIL = "CustomerService@GradingStamps.com"
 PHONE_DISPLAY = "(888) 288-2869"

@@ -244,7 +244,8 @@ def main() -> None:
         'font-size="34" fill="#FFF" text-anchor="middle">A+</text></svg>',
         encoding="utf-8")
 
-    (DOCS / "CNAME").write_text(C.DOMAIN + "\n", encoding="utf-8")
+    if getattr(C, "WRITE_CNAME", True):
+        (DOCS / "CNAME").write_text(C.DOMAIN + "\n", encoding="utf-8")
     (DOCS / ".nojekyll").write_text("", encoding="utf-8")
 
     urls: list[str] = []
