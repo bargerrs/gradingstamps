@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Rubber Stamps — Design Your Own | GradingStamps</title>
+<meta name="description" content="We manufacture custom pre-ink rubber stamps from your wording or artwork — personalized teacher stamps, address stamps, and school stamps.">
+<link rel="canonical" href="https://www.gradingstamps.com/custom/">
+<meta property="og:title" content="Custom Rubber Stamps — Design Your Own | GradingStamps">
+<meta property="og:description" content="We manufacture custom pre-ink rubber stamps from your wording or artwork — personalized teacher stamps, address stamps, and school stamps.">
+<meta property="og:url" content="https://www.gradingstamps.com/custom/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GradingStamps">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:wght@400;700;800&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site"><div class="wrap masthead">
+  <a class="logo" href="../">GRADING<em>STAMPS</em></a>
+  <span class="byline">From MJ&#x27;s Art Stamps · 20+ years</span>
+  <nav class="main" aria-label="Main">
+    <a href="../shop/">Shop</a> <a href="../shop/spanish/">Spanish</a> <a href="../custom/" aria-current="page">Custom Stamps</a> <a href="../contact/">Contact</a>
+    <a class="cart" href="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&display=1&business=CustomerService@GradingStamps.com">View cart</a>
+  </nav>
+</div></header>
+
+<main><div class="wrap page">
+  <span class="stampchip">Custom stamps</span>
+  <h1>Design a stamp nobody sells</h1>
+  <p>Need your name, your wording, or your own artwork on a pre-ink stamp?
+  That's been our specialty for two decades — personalized teacher stamps,
+  "From the desk of…" stamps, return address stamps, school office stamps.
+  Tell us what you want and we'll reply with a proof and a quote, usually
+  within a couple of days.</p>
+  <form id="customForm">
+    <div class="field"><label for="cName">Your name</label>
+      <input id="cName" type="text" autocomplete="name"></div>
+    <div class="field"><label for="cText">What should the stamp say?</label>
+      <textarea id="cText" placeholder="e.g.  From the classroom of Mrs. Rivera — Room 12"></textarea></div>
+    <div class="field"><label for="cSize">Rough size</label>
+      <select id="cSize">
+        <option>Small — about 1½" × ⅝"</option>
+        <option selected>Medium — about 2¼" × 1"</option>
+        <option>Large — about 2¾" × 2"</option>
+        <option>Not sure — recommend one</option>
+      </select></div>
+    <div class="field"><label for="cNotes">Anything else? (artwork, deadline, quantity)</label>
+      <textarea id="cNotes"></textarea></div>
+    <button type="submit" class="btn">Compose order email</button>
+  </form>
+  <div class="notice">The button opens a ready-to-send email to
+  <b>CustomerService@GradingStamps.com</b> — attach artwork to that email if you have any.
+  Prefer the phone? Call <a href="tel:+18882882869">(888) 288-2869</a>.</div>
+</div></main>
+<script>
+document.getElementById('customForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var v = function (id) { return document.getElementById(id).value; };
+  var body = 'Name: ' + v('cName') + '\n\nStamp text:\n' + v('cText') +
+             '\n\nSize: ' + v('cSize') + '\n\nNotes:\n' + v('cNotes');
+  location.href = 'mailto:CustomerService@GradingStamps.com' +
+    '?subject=' + encodeURIComponent('Custom stamp request') +
+    '&body=' + encodeURIComponent(body);
+});
+</script>
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div>
+      <b>GradingStamps.com</b><br>
+      Stop writing. Stop explaining. Start stamping.
+    </div>
+    <div>
+      <b>Questions?</b><br>
+      <a href="mailto:CustomerService@GradingStamps.com">CustomerService@GradingStamps.com</a><br>
+      <a href="tel:+18882882869">(888) 288-2869</a>
+    </div>
+    <div>
+      <b>Shop</b><br>
+      <a href="../shop/">All stamps</a><br>
+      <a href="../custom/">Custom stamps</a>
+    </div>
+  </div>
+  <div class="maker">© 2026 MJ&#x27;s Art Stamps · Pre-ink stamps for teachers and schools</div>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+scrape/b64_*.txt
+scrape/vector-worst8.png

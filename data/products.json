@@ -1,0 +1,1540 @@
+[
+  {
+    "id": "A086",
+    "name": "Daily Work Standards",
+    "image_url": "stamps/086.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A086_daily-work-standards.gif",
+    "image_original_name": "086.gif"
+  },
+  {
+    "id": "A087",
+    "name": "Work Completed Together",
+    "image_url": "stamps/087.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": ".",
+    "image_file": "assets/stamps/A087_work-completed-together.gif",
+    "image_original_name": "087.gif"
+  },
+  {
+    "id": "A093",
+    "name": "Use Complete Sentences",
+    "image_url": "stamps/093.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Writing"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Use Complete Sentences--with a checkbox available to give the option to Rewrite and Return it",
+    "image_file": "assets/stamps/A093_use-complete-sentences.gif",
+    "image_original_name": "093.gif"
+  },
+  {
+    "id": "A094",
+    "name": "Rough Draft",
+    "image_url": "stamps/094.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A094_rough-draft.gif",
+    "image_original_name": "094.gif"
+  },
+  {
+    "id": "A098",
+    "name": "Read Only",
+    "image_url": "stamps/098.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A098_read-only.gif",
+    "image_original_name": "098.gif"
+  },
+  {
+    "id": "A101",
+    "name": "Absent Make-up Work",
+    "image_url": "stamps/101.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Absent",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 8.49,
+        "label": "$8.49 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$8.49",
+    "description": "Absent Make-up Work. Hopefully they feel better now.",
+    "image_file": "assets/stamps/A101_absent-make-up-work.gif",
+    "image_original_name": "101.gif"
+  },
+  {
+    "id": "A102",
+    "name": "Please Use a Pencil",
+    "image_url": "stamps/102.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Pencil",
+      "Primary"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Please use a pencil--no pens or crayons on this assignment",
+    "image_file": "assets/stamps/A102_please-use-a-pencil.gif",
+    "image_original_name": "102.gif"
+  },
+  {
+    "id": "A103",
+    "name": "Incomplete",
+    "image_url": "stamps/103.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Incomplete",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "3\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": "Incomplete, black to white faded gradient.",
+    "image_file": "assets/stamps/A103_incomplete.gif",
+    "image_original_name": "103.gif"
+  },
+  {
+    "id": "A107",
+    "name": "No Homework",
+    "image_url": "stamps/107.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A107_no-homework.gif",
+    "image_original_name": "107.gif"
+  },
+  {
+    "id": "A108",
+    "name": "No Work No Credit",
+    "image_url": "stamps/108.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A108_no-work-no-credit.gif",
+    "image_original_name": "108.gif"
+  },
+  {
+    "id": "A112",
+    "name": "Completed with Teacher's Help",
+    "image_url": "stamps/112.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A112_completed-with-teacher-s-help.gif",
+    "image_original_name": "112.gif"
+  },
+  {
+    "id": "A113",
+    "name": "Neater Please",
+    "image_url": "stamps/113.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "The sweeping Janitor Bear reminds you to be Neater Please",
+    "image_file": "assets/stamps/A113_neater-please.gif",
+    "image_original_name": "113.gif"
+  },
+  {
+    "id": "A115",
+    "name": "Elephant Sign & Return",
+    "image_url": "stamps/115.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Please Sign",
+      "Parents"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": "Great stamp for Parent Signatures.",
+    "image_file": "assets/stamps/A115_elephant-sign-return.gif",
+    "image_original_name": "115.gif"
+  },
+  {
+    "id": "A116",
+    "name": "Homework & Signature",
+    "image_url": "stamps/116.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Homework",
+      "Parent Signature"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": ".",
+    "image_file": "assets/stamps/A116_homework-signature.gif",
+    "image_original_name": "116.gif"
+  },
+  {
+    "id": "A118",
+    "name": "Corrected Together",
+    "image_url": "stamps/118.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A118_corrected-together.gif",
+    "image_original_name": "118.gif"
+  },
+  {
+    "id": "A119",
+    "name": "Six Traits Grading Rubric X 5",
+    "image_url": "stamps/119a.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Six Traits of Writing Rubic X 5"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": "You can grade your students Six Traits of Writing Assignment quicker and easier. Within seconds, you will be able to check the Traits being graded and circle the proficiency level. This stamp will save you time and the pain of using traditional wood stamps and ink pads. This pre-ink stamp will give you 20,000 impressions before needing to be re-inked. Not made in China. Designed and manufactured in Austria and assembled in the USA.",
+    "image_file": "assets/stamps/A119_six-traits-grading-rubric-x-5.gif",
+    "image_original_name": "119a.gif"
+  },
+  {
+    "id": "A120",
+    "name": "Six Traits of Writing Rubric X 6",
+    "image_url": "stamps/120.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Six Traits of Writing Rubic"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": "You can grade your students Six Traits of Writing Assignment quicker and easier. Within seconds, you will be able to check the Traits being graded and circle the proficiency level. This stamp will save you time and the pain of using traditional wood stamps and ink pads. This pre-ink stamp will give you 20,000 impressions before needing to be re-inked. Not made in China. Designed and manufactured in Austria and assembled in the USA.",
+    "image_file": "assets/stamps/A120_six-traits-of-writing-rubric-x-6.gif",
+    "image_original_name": "120.gif"
+  },
+  {
+    "id": "A121",
+    "name": "Rethink Stars",
+    "image_url": "stamps/121.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Stars"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Rethink, Redo, and Return with the help of 3 friendly Stars",
+    "image_file": "assets/stamps/A121_rethink-stars.gif",
+    "image_original_name": "121.gif"
+  },
+  {
+    "id": "A132",
+    "name": "This Essay Needs",
+    "image_url": "stamps/132.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Writing",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 19.95,
+        "label": "$19.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "3\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$19.95",
+    "description": ".",
+    "image_file": "assets/stamps/A132_this-essay-needs.gif",
+    "image_original_name": "132.gif"
+  },
+  {
+    "id": "A136",
+    "name": "Happy Face",
+    "image_url": "stamps/136.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Fun"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A136_happy-face.gif",
+    "image_original_name": "136.gif"
+  },
+  {
+    "id": "A137",
+    "name": "Modifications Provided",
+    "image_url": "stamps/137.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 19.95,
+        "label": "$19.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "3\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$19.95",
+    "description": ".",
+    "image_file": "assets/stamps/A137_modifications-provided.gif",
+    "image_original_name": "137.gif"
+  },
+  {
+    "id": "A142",
+    "name": "I Lost My Tooth",
+    "image_url": "stamps/142.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Fun"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A142_i-lost-my-tooth.gif",
+    "image_original_name": "142.gif"
+  },
+  {
+    "id": "A144",
+    "name": "Math Wiz",
+    "image_url": "stamps/144.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Math"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 1/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Our most popular teachers rubber stamp, the Math Wizard is a timeless symbol of the power and change you can create with math and science. Help to inspire the next generations STEM (Science, Technology, Engineering, and Math) Leaders by helping promote mathematics and numbers with the Math Wiz stamp.",
+    "image_file": "assets/stamps/A144_math-wiz.gif",
+    "image_original_name": "144.gif"
+  },
+  {
+    "id": "A145a",
+    "name": "Blackboard",
+    "image_url": "stamps/145a.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Message"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A145a_blackboard.gif",
+    "image_original_name": "145a.gif"
+  },
+  {
+    "id": "A146",
+    "name": "Late Work Snail",
+    "image_url": "stamps/146.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Late",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Nothing says Late Work like a tired snail",
+    "image_file": "assets/stamps/A146_late-work-snail.gif",
+    "image_original_name": "146.gif"
+  },
+  {
+    "id": "A147",
+    "name": "Nice Work Pencil",
+    "image_url": "stamps/147.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Motivation"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "The work done on this assignment is so nice that the pencil is dancing off the page",
+    "image_file": "assets/stamps/A147_nice-work-pencil.gif",
+    "image_original_name": "147.gif"
+  },
+  {
+    "id": "A148",
+    "name": "Please Correct Pencil",
+    "image_url": "stamps/148.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Needs correction"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "2 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Please correct your work, this Pencil will show you how!.",
+    "image_file": "assets/stamps/A148_please-correct-pencil.gif",
+    "image_original_name": "148.gif"
+  },
+  {
+    "id": "A149",
+    "name": "This Book Belongs To:",
+    "image_url": "stamps/149.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Library"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": ".",
+    "image_file": "assets/stamps/A149_this-book-belongs-to.gif",
+    "image_original_name": "149.gif"
+  },
+  {
+    "id": "A152",
+    "name": "Incomplete Dog",
+    "image_url": "stamps/152.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Incomplete",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Incomplete Please Finish with a sad puppy",
+    "image_file": "assets/stamps/A152_incomplete-dog.gif",
+    "image_original_name": "152.gif"
+  },
+  {
+    "id": "A153",
+    "name": "Super Scientist",
+    "image_url": "stamps/153.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Science",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 1/4 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A153_super-scientist.gif",
+    "image_original_name": "153.gif"
+  },
+  {
+    "id": "A154",
+    "name": "Messy Work Crow",
+    "image_url": "stamps/154.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Messy Crow"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Messy Work extra dirty crow",
+    "image_file": "assets/stamps/A154_messy-work-crow.gif",
+    "image_original_name": "154.gif"
+  },
+  {
+    "id": "A156",
+    "name": "Great Job Crayons",
+    "image_url": "stamps/156.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Sometimes, your crayons are your best friend. That's why they need to let you know you did a Great Job!",
+    "image_file": "assets/stamps/A156_great-job-crayons.gif",
+    "image_original_name": "156.gif"
+  },
+  {
+    "id": "A162",
+    "name": "Super Speller",
+    "image_url": "stamps/162.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Spelling",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Allow the Spelling Bee himself to give you 4 thumbs up for being a Super Speller",
+    "image_file": "assets/stamps/A162_super-speller.gif",
+    "image_original_name": "162.gif"
+  },
+  {
+    "id": "A163",
+    "name": "Good Work Seal",
+    "image_url": "stamps/163.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A163_good-work-seal.gif",
+    "image_original_name": "163.gif"
+  },
+  {
+    "id": "A166",
+    "name": "Dolphins: Terrific",
+    "image_url": "stamps/166.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Terrific",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A166_dolphins-terrific.gif",
+    "image_original_name": "166.gif"
+  },
+  {
+    "id": "A168",
+    "name": "Corrected For:",
+    "image_url": "stamps/168.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "2 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A168_corrected-for.gif",
+    "image_original_name": "168.gif"
+  },
+  {
+    "id": "A169",
+    "name": "Sun: Very Good Work",
+    "image_url": "stamps/169.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A169_sun-very-good-work.gif",
+    "image_original_name": "169.gif"
+  },
+  {
+    "id": "A170",
+    "name": "Homework",
+    "image_url": "stamps/170.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Homework",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Sometimes the only way to get kids to remember their Homework, is to nail a sign on the paper.",
+    "image_file": "assets/stamps/A170_homework.gif",
+    "image_original_name": "170.gif"
+  },
+  {
+    "id": "A171",
+    "name": "Excellent Dog",
+    "image_url": "stamps/171.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Excellent",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A171_excellent-dog.gif",
+    "image_original_name": "171.gif"
+  },
+  {
+    "id": "A172",
+    "name": "Writing Process",
+    "image_url": "stamps/172.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Writing",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A172_writing-process.gif",
+    "image_original_name": "172.gif"
+  },
+  {
+    "id": "A173",
+    "name": "This Paper Scored For:",
+    "image_url": "stamps/173.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Writing"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": ".",
+    "image_file": "assets/stamps/A173_this-paper-scored-for.gif",
+    "image_original_name": "173.gif"
+  },
+  {
+    "id": "A175",
+    "name": "No Name No Fame",
+    "image_url": "stamps/175.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Forget lost assignments and lost credit, it's easy to remember your name when you remember, \"No Name, No Fame\"",
+    "image_file": "assets/stamps/A175_no-name-no-fame.gif",
+    "image_original_name": "175.gif"
+  },
+  {
+    "id": "A177",
+    "name": "To The Parents of:",
+    "image_url": "stamps/177.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Parents"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": ".",
+    "image_file": "assets/stamps/A177_to-the-parents-of.gif",
+    "image_original_name": "177.gif"
+  },
+  {
+    "id": "A178",
+    "name": "Unfinished Assignment",
+    "image_url": "stamps/178.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 19.95,
+        "label": "$19.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "3\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$19.95",
+    "description": ".",
+    "image_file": "assets/stamps/A178_unfinished-assignment.gif",
+    "image_original_name": "178.gif"
+  },
+  {
+    "id": "A179",
+    "name": "Parent Signature",
+    "image_url": "stamps/179.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Parent Signature"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A179_parent-signature.gif",
+    "image_original_name": "179.gif"
+  },
+  {
+    "id": "A181",
+    "name": "Incompleto",
+    "image_url": "stamps/181.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Spanish",
+      "Teacher",
+      "Incomplete"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher",
+      "Spanish"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "1\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A181_incompleto.gif",
+    "image_original_name": "181.gif"
+  },
+  {
+    "id": "A182",
+    "name": "Entregado Tarde",
+    "image_url": "stamps/182.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "En Español",
+      "Spanish"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Spanish"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A182_entregado-tarde.gif",
+    "image_original_name": "182.gif"
+  },
+  {
+    "id": "A184",
+    "name": "Bien Hecho",
+    "image_url": "stamps/184.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "En Español",
+      "Spanish"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Spanish"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A184_bien-hecho.gif",
+    "image_original_name": "184.gif"
+  },
+  {
+    "id": "A185",
+    "name": "Muy Bueno",
+    "image_url": "stamps/185.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "En Español",
+      "Spanish"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Spanish"
+    ],
+    "height_in": "1 3/4 \"",
+    "width_in": "1 1/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A185_muy-bueno.gif",
+    "image_original_name": "185.gif"
+  },
+  {
+    "id": "A186",
+    "name": "Tarea",
+    "image_url": "stamps/186.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "En Español",
+      "Spanish"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Spanish"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1 1/2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A186_tarea.gif",
+    "image_original_name": "186.gif"
+  },
+  {
+    "id": "A192",
+    "name": "Extra Credit",
+    "image_url": "stamps/192.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Extra Credit"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "2 \"",
+    "width_in": "1\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": ".",
+    "image_file": "assets/stamps/A192_extra-credit.gif",
+    "image_original_name": "192.gif"
+  },
+  {
+    "id": "A194",
+    "name": "To The Parents of: English & Spanish",
+    "image_url": "stamps/194.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "En Español",
+      "Spanish"
+    ],
+    "price_options": [
+      {
+        "price": 14.95,
+        "label": "$14.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Spanish"
+    ],
+    "height_in": "1 \"",
+    "width_in": "2 3/4\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$14.95",
+    "description": ".",
+    "image_file": "assets/stamps/A194_to-the-parents-of-english-spanish.gif",
+    "image_original_name": "194.gif"
+  },
+  {
+    "id": "A195",
+    "name": "Trabajo No Terminado",
+    "image_url": "stamps/195.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "En Español",
+      "Spanish"
+    ],
+    "price_options": [
+      {
+        "price": 19.95,
+        "label": "$19.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Spanish"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "3\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$19.95",
+    "description": ".",
+    "image_file": "assets/stamps/A195_trabajo-no-terminado.gif",
+    "image_original_name": "195.gif"
+  },
+  {
+    "id": "A198",
+    "name": "Show Your Work",
+    "image_url": "stamps/198.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "Over the years, I've received many questions as to why a newborn crocodile is representative of Showing your Work. To that, I reply, \"Why Not?\"",
+    "image_file": "assets/stamps/A198_show-your-work.gif",
+    "image_original_name": "198.gif"
+  },
+  {
+    "id": "A404",
+    "name": "Don't Stop Now",
+    "image_url": "stamps/404.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading"
+    ],
+    "price_options": [
+      {
+        "price": 12.95,
+        "label": "$12.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/4 \"",
+    "width_in": "2\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$12.95",
+    "description": "This dog is starting to think it's playtime, but don't stop now!",
+    "image_file": "assets/stamps/A404_don-t-stop-now.gif",
+    "image_original_name": "404.gif"
+  },
+  {
+    "id": "A410",
+    "name": "This Paper Needs",
+    "image_url": "stamps/410.gif",
+    "image_width": null,
+    "image_height": null,
+    "keywords": [
+      "Teacher",
+      "Grading",
+      "Writing"
+    ],
+    "price_options": [
+      {
+        "price": 19.95,
+        "label": "$19.95 (Pre-ink Mount)"
+      }
+    ],
+    "categories": [
+      "Teacher"
+    ],
+    "height_in": "1 1/2 \"",
+    "width_in": "3\"",
+    "wood_mount_price": "Not Available",
+    "preink_price": "$19.95",
+    "description": ".",
+    "image_file": "assets/stamps/A410_this-paper-needs.gif",
+    "image_original_name": "410.gif"
+  }
+]

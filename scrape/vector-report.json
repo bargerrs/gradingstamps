@@ -1,0 +1,674 @@
+[
+ {
+  "stem": "A086_daily-work-standards",
+  "px": [
+   335,
+   133
+  ],
+  "gif_bytes": 6651,
+  "svg_bytes": 27270,
+  "curves": 104,
+  "gray_frac": 0.0884,
+  "flag_gray": true
+ },
+ {
+  "stem": "A087_work-completed-together",
+  "px": [
+   370,
+   101
+  ],
+  "gif_bytes": 5060,
+  "svg_bytes": 17155,
+  "curves": 40,
+  "gray_frac": 0.064,
+  "flag_gray": false
+ },
+ {
+  "stem": "A093_use-complete-sentences",
+  "px": [
+   517,
+   250
+  ],
+  "gif_bytes": 4821,
+  "svg_bytes": 41202,
+  "curves": 54,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A094_rough-draft",
+  "px": [
+   184,
+   52
+  ],
+  "gif_bytes": 1545,
+  "svg_bytes": 12227,
+  "curves": 16,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A098_read-only",
+  "px": [
+   254,
+   83
+  ],
+  "gif_bytes": 2227,
+  "svg_bytes": 18966,
+  "curves": 33,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A101_absent-make-up-work",
+  "px": [
+   319,
+   135
+  ],
+  "gif_bytes": 4190,
+  "svg_bytes": 21948,
+  "curves": 24,
+  "gray_frac": 0.0158,
+  "flag_gray": false
+ },
+ {
+  "stem": "A102_please-use-a-pencil",
+  "px": [
+   162,
+   96
+  ],
+  "gif_bytes": 2517,
+  "svg_bytes": 10579,
+  "curves": 32,
+  "gray_frac": 0.0366,
+  "flag_gray": false
+ },
+ {
+  "stem": "A103_incomplete",
+  "px": [
+   265,
+   55
+  ],
+  "gif_bytes": 3144,
+  "svg_bytes": 10912,
+  "curves": 37,
+  "gray_frac": 0.0427,
+  "flag_gray": false
+ },
+ {
+  "stem": "A107_no-homework",
+  "px": [
+   126,
+   123
+  ],
+  "gif_bytes": 2536,
+  "svg_bytes": 6526,
+  "curves": 10,
+  "gray_frac": 0.0604,
+  "flag_gray": false
+ },
+ {
+  "stem": "A108_no-work-no-credit",
+  "px": [
+   121,
+   119
+  ],
+  "gif_bytes": 3204,
+  "svg_bytes": 6924,
+  "curves": 13,
+  "gray_frac": 0.0652,
+  "flag_gray": false
+ },
+ {
+  "stem": "A112_completed-with-teacher-s-help",
+  "px": [
+   294,
+   212
+  ],
+  "gif_bytes": 12344,
+  "svg_bytes": 57981,
+  "curves": 187,
+  "gray_frac": 0.1532,
+  "flag_gray": true
+ },
+ {
+  "stem": "A113_neater-please",
+  "px": [
+   233,
+   332
+  ],
+  "gif_bytes": 7913,
+  "svg_bytes": 66315,
+  "curves": 79,
+  "gray_frac": 0.0137,
+  "flag_gray": false
+ },
+ {
+  "stem": "A115_elephant-sign-return",
+  "px": [
+   955,
+   326
+  ],
+  "gif_bytes": 9033,
+  "svg_bytes": 53892,
+  "curves": 60,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A116_homework-signature",
+  "px": [
+   263,
+   134
+  ],
+  "gif_bytes": 6281,
+  "svg_bytes": 19706,
+  "curves": 44,
+  "gray_frac": 0.0694,
+  "flag_gray": false
+ },
+ {
+  "stem": "A118_corrected-together",
+  "px": [
+   228,
+   63
+  ],
+  "gif_bytes": 2782,
+  "svg_bytes": 8748,
+  "curves": 38,
+  "gray_frac": 0.0804,
+  "flag_gray": true
+ },
+ {
+  "stem": "A119_six-traits-grading-rubric-x-5",
+  "px": [
+   528,
+   348
+  ],
+  "gif_bytes": 30170,
+  "svg_bytes": 44118,
+  "curves": 170,
+  "gray_frac": 0.0668,
+  "flag_gray": false
+ },
+ {
+  "stem": "A120_six-traits-of-writing-rubric-x-6",
+  "px": [
+   573,
+   347
+  ],
+  "gif_bytes": 32654,
+  "svg_bytes": 48405,
+  "curves": 183,
+  "gray_frac": 0.0678,
+  "flag_gray": false
+ },
+ {
+  "stem": "A121_rethink-stars",
+  "px": [
+   609,
+   304
+  ],
+  "gif_bytes": 6826,
+  "svg_bytes": 93365,
+  "curves": 61,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A132_this-essay-needs",
+  "px": [
+   449,
+   264
+  ],
+  "gif_bytes": 21075,
+  "svg_bytes": 77671,
+  "curves": 437,
+  "gray_frac": 0.1234,
+  "flag_gray": true
+ },
+ {
+  "stem": "A136_happy-face",
+  "px": [
+   499,
+   497
+  ],
+  "gif_bytes": 5611,
+  "svg_bytes": 59304,
+  "curves": 10,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A137_modifications-provided",
+  "px": [
+   448,
+   262
+  ],
+  "gif_bytes": 19658,
+  "svg_bytes": 45265,
+  "curves": 207,
+  "gray_frac": 0.0927,
+  "flag_gray": true
+ },
+ {
+  "stem": "A142_i-lost-my-tooth",
+  "px": [
+   383,
+   557
+  ],
+  "gif_bytes": 10300,
+  "svg_bytes": 128141,
+  "curves": 99,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A144_math-wiz",
+  "px": [
+   342,
+   567
+  ],
+  "gif_bytes": 9247,
+  "svg_bytes": 137266,
+  "curves": 104,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A145a_blackboard",
+  "px": [
+   197,
+   134
+  ],
+  "gif_bytes": 3962,
+  "svg_bytes": 14384,
+  "curves": 52,
+  "gray_frac": 0.0538,
+  "flag_gray": false
+ },
+ {
+  "stem": "A146_late-work-snail",
+  "px": [
+   336,
+   387
+  ],
+  "gif_bytes": 6932,
+  "svg_bytes": 89503,
+  "curves": 38,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A147_nice-work-pencil",
+  "px": [
+   465,
+   353
+  ],
+  "gif_bytes": 7019,
+  "svg_bytes": 91046,
+  "curves": 33,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A148_please-correct-pencil",
+  "px": [
+   600,
+   357
+  ],
+  "gif_bytes": 7533,
+  "svg_bytes": 109077,
+  "curves": 77,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A149_this-book-belongs-to",
+  "px": [
+   199,
+   202
+  ],
+  "gif_bytes": 4844,
+  "svg_bytes": 27873,
+  "curves": 65,
+  "gray_frac": 0.0372,
+  "flag_gray": false
+ },
+ {
+  "stem": "A152_incomplete-dog",
+  "px": [
+   390,
+   540
+  ],
+  "gif_bytes": 14637,
+  "svg_bytes": 125514,
+  "curves": 79,
+  "gray_frac": 0.0337,
+  "flag_gray": false
+ },
+ {
+  "stem": "A153_super-scientist",
+  "px": [
+   456,
+   652
+  ],
+  "gif_bytes": 11102,
+  "svg_bytes": 138083,
+  "curves": 66,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A154_messy-work-crow",
+  "px": [
+   329,
+   354
+  ],
+  "gif_bytes": 6451,
+  "svg_bytes": 98794,
+  "curves": 116,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A156_great-job-crayons",
+  "px": [
+   288,
+   414
+  ],
+  "gif_bytes": 6939,
+  "svg_bytes": 107884,
+  "curves": 62,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A162_super-speller",
+  "px": [
+   357,
+   486
+  ],
+  "gif_bytes": 7565,
+  "svg_bytes": 95163,
+  "curves": 42,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A163_good-work-seal",
+  "px": [
+   207,
+   226
+  ],
+  "gif_bytes": 8427,
+  "svg_bytes": 29805,
+  "curves": 31,
+  "gray_frac": 0.0825,
+  "flag_gray": true
+ },
+ {
+  "stem": "A166_dolphins-terrific",
+  "px": [
+   477,
+   541
+  ],
+  "gif_bytes": 7356,
+  "svg_bytes": 94945,
+  "curves": 58,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A168_corrected-for",
+  "px": [
+   664,
+   414
+  ],
+  "gif_bytes": 8950,
+  "svg_bytes": 114540,
+  "curves": 123,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A169_sun-very-good-work",
+  "px": [
+   1259,
+   1235
+  ],
+  "gif_bytes": 29424,
+  "svg_bytes": 397063,
+  "curves": 41,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A170_homework",
+  "px": [
+   618,
+   299
+  ],
+  "gif_bytes": 7383,
+  "svg_bytes": 89950,
+  "curves": 45,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A171_excellent-dog",
+  "px": [
+   405,
+   353
+  ],
+  "gif_bytes": 8578,
+  "svg_bytes": 141893,
+  "curves": 379,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A172_writing-process",
+  "px": [
+   451,
+   163
+  ],
+  "gif_bytes": 8126,
+  "svg_bytes": 23359,
+  "curves": 108,
+  "gray_frac": 0.0655,
+  "flag_gray": false
+ },
+ {
+  "stem": "A173_this-paper-scored-for",
+  "px": [
+   456,
+   156
+  ],
+  "gif_bytes": 8055,
+  "svg_bytes": 26371,
+  "curves": 120,
+  "gray_frac": 0.076,
+  "flag_gray": false
+ },
+ {
+  "stem": "A175_no-name-no-fame",
+  "px": [
+   375,
+   450
+  ],
+  "gif_bytes": 8595,
+  "svg_bytes": 116350,
+  "curves": 72,
+  "gray_frac": 0.0,
+  "flag_gray": false
+ },
+ {
+  "stem": "A177_to-the-parents-of",
+  "px": [
+   282,
+   118
+  ],
+  "gif_bytes": 3808,
+  "svg_bytes": 18502,
+  "curves": 37,
+  "gray_frac": 0.0353,
+  "flag_gray": false
+ },
+ {
+  "stem": "A178_unfinished-assignment",
+  "px": [
+   327,
+   215
+  ],
+  "gif_bytes": 12252,
+  "svg_bytes": 44675,
+  "curves": 195,
+  "gray_frac": 0.0627,
+  "flag_gray": false
+ },
+ {
+  "stem": "A179_parent-signature",
+  "px": [
+   186,
+   69
+  ],
+  "gif_bytes": 2235,
+  "svg_bytes": 15929,
+  "curves": 47,
+  "gray_frac": 0.0323,
+  "flag_gray": false
+ },
+ {
+  "stem": "A181_incompleto",
+  "px": [
+   145,
+   177
+  ],
+  "gif_bytes": 4570,
+  "svg_bytes": 44630,
+  "curves": 83,
+  "gray_frac": 0.0274,
+  "flag_gray": false
+ },
+ {
+  "stem": "A182_entregado-tarde",
+  "px": [
+   543,
+   390
+  ],
+  "gif_bytes": 9575,
+  "svg_bytes": 114161,
+  "curves": 52,
+  "gray_frac": 0.0018,
+  "flag_gray": false
+ },
+ {
+  "stem": "A184_bien-hecho",
+  "px": [
+   119,
+   187
+  ],
+  "gif_bytes": 3714,
+  "svg_bytes": 32726,
+  "curves": 69,
+  "gray_frac": 0.0288,
+  "flag_gray": false
+ },
+ {
+  "stem": "A185_muy-bueno",
+  "px": [
+   142,
+   208
+  ],
+  "gif_bytes": 4871,
+  "svg_bytes": 42085,
+  "curves": 56,
+  "gray_frac": 0.0345,
+  "flag_gray": false
+ },
+ {
+  "stem": "A186_tarea",
+  "px": [
+   140,
+   144
+  ],
+  "gif_bytes": 3527,
+  "svg_bytes": 26809,
+  "curves": 63,
+  "gray_frac": 0.0224,
+  "flag_gray": false
+ },
+ {
+  "stem": "A192_extra-credit",
+  "px": [
+   203,
+   95
+  ],
+  "gif_bytes": 3124,
+  "svg_bytes": 13167,
+  "curves": 38,
+  "gray_frac": 0.0382,
+  "flag_gray": false
+ },
+ {
+  "stem": "A194_to-the-parents-of-english-spanish",
+  "px": [
+   273,
+   121
+  ],
+  "gif_bytes": 4053,
+  "svg_bytes": 28165,
+  "curves": 63,
+  "gray_frac": 0.0241,
+  "flag_gray": false
+ },
+ {
+  "stem": "A195_trabajo-no-terminado",
+  "px": [
+   325,
+   215
+  ],
+  "gif_bytes": 8783,
+  "svg_bytes": 35637,
+  "curves": 243,
+  "gray_frac": 0.0751,
+  "flag_gray": false
+ },
+ {
+  "stem": "A198_show-your-work",
+  "px": [
+   143,
+   135
+  ],
+  "gif_bytes": 3609,
+  "svg_bytes": 25396,
+  "curves": 50,
+  "gray_frac": 0.0258,
+  "flag_gray": false
+ },
+ {
+  "stem": "A404_don-t-stop-now",
+  "px": [
+   211,
+   134
+  ],
+  "gif_bytes": 5433,
+  "svg_bytes": 20628,
+  "curves": 71,
+  "gray_frac": 0.0789,
+  "flag_gray": false
+ },
+ {
+  "stem": "A410_this-paper-needs",
+  "px": [
+   330,
+   180
+  ],
+  "gif_bytes": 9679,
+  "svg_bytes": 61357,
+  "curves": 378,
+  "gray_frac": 0.0905,
+  "flag_gray": true
+ }
+]

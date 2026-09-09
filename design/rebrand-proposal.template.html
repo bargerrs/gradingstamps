@@ -1,0 +1,809 @@
+<title>GradingStamps Rebrand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Special+Elite&display=swap">
+<style>
+  :root {
+    --paper: #FCFBF7;
+    --paper-line: rgba(103, 140, 177, 0.14);
+    --card: #FFFFFF;
+    --manila: #F3ECDA;
+    --manila-edge: #E0D5B8;
+    --ink: #26304A;
+    --ink-soft: #5A6480;
+    --stamp: #C8102E;
+    --stamp-soft: rgba(200, 16, 46, 0.08);
+    --rule: #C7D8E8;
+    --gold: #B97F14;
+    --good: #2E6E4C;
+    --shadow: 0 2px 10px rgba(38, 48, 74, 0.08);
+    --display: "Alfa Slab One", "Rockwell", "Roboto Slab", serif;
+    --body: "Nunito Sans", "Segoe UI", system-ui, sans-serif;
+    --typewriter: "Special Elite", "Courier New", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #1C2336;
+      --paper-line: rgba(122, 152, 190, 0.10);
+      --card: #242D47;
+      --manila: #2B3552;
+      --manila-edge: #3A466B;
+      --ink: #E9E7DE;
+      --ink-soft: #A7AFC7;
+      --stamp: #F0566C;
+      --stamp-soft: rgba(240, 86, 108, 0.12);
+      --rule: #3D4B6E;
+      --gold: #E0B054;
+      --good: #6FBE94;
+      --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #1C2336;
+    --paper-line: rgba(122, 152, 190, 0.10);
+    --card: #242D47;
+    --manila: #2B3552;
+    --manila-edge: #3A466B;
+    --ink: #E9E7DE;
+    --ink-soft: #A7AFC7;
+    --stamp: #F0566C;
+    --stamp-soft: rgba(240, 86, 108, 0.12);
+    --rule: #3D4B6E;
+    --gold: #E0B054;
+    --good: #6FBE94;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    background-image: repeating-linear-gradient(
+      to bottom, transparent 0, transparent 31px, var(--paper-line) 31px, var(--paper-line) 32px);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 16.5px;
+    line-height: 1.65;
+  }
+  .sheet {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 48px 28px 96px;
+    position: relative;
+  }
+  @media (min-width: 900px) {
+    .sheet::before {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0; left: -14px;
+      width: 2px;
+      background: var(--stamp);
+      opacity: 0.25;
+    }
+  }
+  p, li { max-width: 66ch; }
+  strong { font-weight: 800; }
+  a { color: var(--stamp); }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+
+  /* ---------- masthead ---------- */
+  .masthead { text-align: center; padding: 24px 0 8px; position: relative; }
+  .logoface {
+    display: inline-block;
+    border: 3px solid var(--ink);
+    border-radius: 18px;
+    padding: 26px 44px 20px;
+    position: relative;
+    box-shadow: inset 0 0 0 3px var(--paper), inset 0 0 0 5px var(--ink);
+    background: var(--card);
+  }
+  .logoface h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(34px, 7vw, 56px);
+    line-height: 1.02;
+    margin: 0;
+    letter-spacing: 1px;
+    text-wrap: balance;
+  }
+  .logoface h1 .line2 { color: var(--stamp); }
+  .maker {
+    font-family: var(--typewriter);
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 10px;
+  }
+  .proposal-stamp {
+    position: absolute;
+    right: -6px; top: -18px;
+    transform: rotate(7deg);
+    font-family: var(--typewriter);
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: var(--stamp);
+    border: 2.5px solid var(--stamp);
+    border-radius: 8px;
+    padding: 5px 12px 3px;
+    background: var(--paper);
+    text-transform: uppercase;
+    box-shadow: var(--shadow);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .proposal-stamp { animation: thunk 0.45s cubic-bezier(0.2, 1.6, 0.4, 1) 0.3s backwards; }
+    @keyframes thunk {
+      from { transform: rotate(7deg) scale(2.4); opacity: 0; }
+      to { transform: rotate(7deg) scale(1); opacity: 1; }
+    }
+  }
+  .lede {
+    margin: 34px auto 0;
+    max-width: 62ch;
+    font-size: 18px;
+  }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 72px; }
+  .stampchip {
+    display: inline-block;
+    font-family: var(--typewriter);
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--stamp);
+    border: 2px dashed var(--stamp);
+    border-radius: 7px;
+    padding: 4px 14px 2px;
+    transform: rotate(-1.6deg);
+    background: var(--stamp-soft);
+  }
+  section h2 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.2;
+    margin: 14px 0 16px;
+    text-wrap: balance;
+  }
+
+  /* ---------- audit ---------- */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin: 22px 0;
+  }
+  .stat {
+    background: var(--card);
+    border: 1.5px solid var(--rule);
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: var(--shadow);
+  }
+  .stat .num {
+    font-family: var(--display);
+    font-size: 25px;
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat .num.bad { color: var(--stamp); }
+  .stat .num.goodc { color: var(--good); }
+  .stat .lbl { font-size: 13.5px; color: var(--ink-soft); margin-top: 4px; line-height: 1.35; }
+  .oldlogo {
+    float: right;
+    margin: 4px 0 12px 20px;
+    text-align: center;
+  }
+  .oldlogo img { width: 200px; max-width: 40vw; border-radius: 10px; display: block; }
+  .oldlogo figcaption { font-family: var(--typewriter); font-size: 11.5px; color: var(--ink-soft); margin-top: 6px; }
+  .findings { padding-left: 20px; }
+  .findings li { margin-bottom: 9px; }
+  .findings li::marker { color: var(--stamp); }
+
+  /* ---------- palette ---------- */
+  .swatches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+  }
+  .swatch {
+    background: var(--card);
+    border: 1.5px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+  }
+  .swatch .pad { height: 64px; }
+  .swatch .meta { padding: 10px 14px 12px; }
+  .swatch .meta b { font-size: 15px; }
+  .swatch .hex {
+    font-family: var(--typewriter);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    margin-left: 6px;
+  }
+  .swatch .use { font-size: 13.5px; color: var(--ink-soft); line-height: 1.4; margin-top: 2px; }
+
+  /* ---------- type specimens ---------- */
+  .specimen {
+    background: var(--card);
+    border: 1.5px solid var(--rule);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-top: 14px;
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 4px;
+  }
+  .specimen .sample { overflow-wrap: break-word; }
+  .specimen .who { font-family: var(--typewriter); font-size: 12.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-soft); }
+  .specimen .why { font-size: 14px; color: var(--ink-soft); line-height: 1.5; }
+
+  /* ---------- mockups (deliberately pinned to the light storefront look) ---------- */
+  .browser {
+    border: 1.5px solid var(--rule);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+    background: #FFFFFF;
+    color: #26304A;
+  }
+  .browser .chrome {
+    display: flex; align-items: center; gap: 8px;
+    background: var(--manila);
+    border-bottom: 1.5px solid var(--manila-edge);
+    padding: 9px 14px;
+  }
+  .browser .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--manila-edge); }
+  .browser .urlbar {
+    flex: 1;
+    font-family: var(--typewriter);
+    font-size: 12px;
+    background: var(--card);
+    color: var(--ink-soft);
+    border-radius: 6px;
+    padding: 3px 12px 1px;
+    border: 1px solid var(--manila-edge);
+  }
+  .mock { padding: 0; font-size: 14px; }
+  .mock-nav {
+    display: flex; align-items: center; gap: 18px;
+    padding: 14px 26px;
+    border-bottom: 1.5px solid #EDE5D2;
+    flex-wrap: wrap;
+  }
+  .mock-logo { font-family: var(--display); font-size: 17px; letter-spacing: 0.5px; }
+  .mock-logo em { color: #C8102E; font-style: normal; }
+  .mock-nav .navlinks { display: flex; gap: 16px; font-weight: 700; font-size: 13px; color: #5A6480; margin-left: auto; flex-wrap: wrap; }
+  .mock-nav .cart {
+    background: #C8102E; color: #FFF;
+    border-radius: 999px; padding: 3px 12px; font-weight: 800; font-size: 12.5px;
+  }
+  .mock-hero {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 34px 30px;
+    background: #FCFBF7;
+  }
+  .mock-hero h3 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(22px, 4vw, 34px);
+    line-height: 1.12;
+    margin: 0 0 12px;
+  }
+  .mock-hero h3 em { color: #C8102E; font-style: normal; }
+  .mock-hero p { font-size: 14.5px; color: #5A6480; margin: 0 0 16px; }
+  .btn {
+    display: inline-block;
+    background: #C8102E; color: #FFF;
+    font-weight: 800; font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 0 #8E0B20;
+  }
+  .trust { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  .trust span {
+    font-family: var(--typewriter);
+    font-size: 11px;
+    border: 1.5px solid #C7D8E8;
+    color: #5A6480;
+    border-radius: 999px;
+    padding: 3px 10px 1px;
+    background: #FFF;
+  }
+  .hero-art {
+    background: #F3ECDA;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: flex; align-items: center; justify-content: center;
+    border: 2px dashed #C9B98A;
+    padding: 26px;
+  }
+  .hero-art img { max-width: 100%; height: auto; mix-blend-mode: multiply; }
+  .mock-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+    padding: 20px 26px 28px;
+    background: #FFFFFF;
+    border-top: 1.5px solid #EDE5D2;
+  }
+  .pcard {
+    border: 1.5px solid #E4E9F0;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #FFF;
+    display: flex; flex-direction: column;
+  }
+  .pcard .art {
+    background: #FFF;
+    height: 120px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px;
+    border-bottom: 1.5px dashed #E4E9F0;
+  }
+  .pcard .art img { max-height: 100%; max-width: 100%; }
+  .pcard .info { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 3px; flex: 1; }
+  .pcard .cat { font-family: var(--typewriter); font-size: 10.5px; color: #9AA3BC; letter-spacing: 1px; }
+  .pcard .pname { font-weight: 800; font-size: 13.5px; line-height: 1.25; }
+  .pcard .size { font-size: 11.5px; color: #5A6480; }
+  .pcard .buyrow { display: flex; align-items: center; justify-content: space-between; margin-top: auto; padding-top: 8px; }
+  .pcard .price { font-family: var(--display); font-size: 16px; }
+  .pcard .add {
+    background: #26304A; color: #FFF;
+    font-size: 11.5px; font-weight: 800;
+    border-radius: 6px; padding: 5px 10px;
+  }
+  .mock-note { font-size: 13.5px; color: var(--ink-soft); margin-top: 10px; }
+  @media (max-width: 640px) {
+    .mock-hero { grid-template-columns: 1fr; }
+    .hero-art { max-width: 220px; margin: 0 auto; }
+    .mock-cards { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- artwork demo ---------- */
+  .imgdemo {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 20px;
+  }
+  .demo-panel {
+    border: 1.5px solid var(--rule);
+    border-radius: 12px;
+    background: var(--card);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+  .demo-panel .stage {
+    background: #FFFFFF;
+    padding: 18px;
+    display: flex; align-items: center; justify-content: center;
+    height: 200px;
+  }
+  .demo-panel .stage img { width: 158px; height: 154px; image-rendering: pixelated; }
+  .demo-panel .stage svg { width: 158px; height: 154px; color: #1a1a1a; }
+  .demo-panel .stage.redink svg { color: #C8102E; }
+  .demo-panel .cap {
+    font-size: 13px;
+    padding: 10px 14px 12px;
+    border-top: 1.5px solid var(--rule);
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
+  .demo-panel .cap b { color: var(--ink); display: block; font-size: 13.5px; }
+  .verdict {
+    background: var(--stamp-soft);
+    border-left: 4px solid var(--stamp);
+    border-radius: 0 10px 10px 0;
+    padding: 12px 18px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  /* ---------- tables ---------- */
+  .tablewrap { overflow-x: auto; margin-top: 18px; }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 560px;
+    background: var(--card);
+    border: 1.5px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+    font-size: 14.5px;
+    box-shadow: var(--shadow);
+  }
+  th {
+    font-family: var(--typewriter);
+    font-weight: 400;
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: left;
+    color: var(--ink-soft);
+    background: var(--manila);
+    padding: 10px 14px 8px;
+  }
+  td {
+    padding: 11px 14px;
+    border-top: 1.5px solid var(--rule);
+    vertical-align: top;
+  }
+  td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .pick { color: var(--good); font-weight: 800; }
+  .pass { color: var(--ink-soft); }
+
+  /* ---------- checklists & roadmap ---------- */
+  .check { list-style: none; padding: 0; }
+  .check li { padding-left: 30px; position: relative; margin-bottom: 9px; }
+  .check li::before {
+    content: "✓";
+    position: absolute; left: 2px; top: 0;
+    color: var(--good);
+    font-weight: 800;
+  }
+  .roadmap { counter-reset: step; list-style: none; padding: 0; margin-top: 18px; }
+  .roadmap li {
+    counter-increment: step;
+    position: relative;
+    padding: 0 0 22px 52px;
+  }
+  .roadmap li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: -2px;
+    width: 34px; height: 34px;
+    border: 2.5px solid var(--stamp);
+    border-radius: 50%;
+    color: var(--stamp);
+    font-family: var(--display);
+    font-size: 16px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--card);
+  }
+  .roadmap li:not(:last-child)::after {
+    content: "";
+    position: absolute; left: 18px; top: 36px; bottom: 4px;
+    width: 2px;
+    background: var(--rule);
+  }
+  .roadmap b { display: block; font-size: 16px; }
+  .roadmap p { margin: 3px 0 0; font-size: 14.5px; color: var(--ink-soft); }
+
+  .qa { margin-top: 14px; padding-left: 20px; }
+  .qa li { margin-bottom: 8px; }
+  .qa li::marker { color: var(--gold); font-weight: 800; }
+
+  footer {
+    margin-top: 80px;
+    text-align: center;
+    font-family: var(--typewriter);
+    font-size: 12.5px;
+    letter-spacing: 1.5px;
+    color: var(--ink-soft);
+  }
+</style>
+
+<div class="sheet">
+
+  <header class="masthead">
+    <div class="logoface">
+      <span class="proposal-stamp">Rebrand Proposal · Aug 2026</span>
+      <h1>GRADING<br><span class="line2">STAMPS</span></h1>
+      <div class="maker">From MJ's Art Stamps · Serving teachers 20+ years</div>
+    </div>
+    <p class="lede">
+      A plan to retire the 2011 ASP.NET site, move to free static hosting, and relaunch
+      GradingStamps.com as a fast, modern shop — same family business,
+      same hand-drawn stamps, a fraction of the cost.
+    </p>
+  </header>
+
+  <section>
+    <span class="stampchip">The Audit</span>
+    <h2>What the scrape found</h2>
+    <figure class="oldlogo">
+      <img src="data:image/jpeg;base64,__B64_LOGO__" alt="Current MJ's Art Stamps logo: pencil and ruler with block letters">
+      <figcaption>current logo, 2011</figcaption>
+    </figure>
+    <p>
+      The whole catalog was pulled down today: <strong>56 products</strong> (50 Teacher,
+      7 Spanish), each with its artwork, dimensions, price, keywords, and description —
+      now sitting in <code>data/products.json</code> ready to rebuild from. The content is
+      100% static, which means the expensive Windows server is doing almost nothing.
+    </p>
+    <div class="stats">
+      <div class="stat"><div class="num">56</div><div class="lbl">stamps scraped, with art, sizes &amp; prices</div></div>
+      <div class="stat"><div class="num">$8.49–19.95</div><div class="lbl">all pre-ink mounts (wood is discontinued)</div></div>
+      <div class="stat"><div class="num bad">2021</div><div class="lbl">the Flash custom-stamp designer died with Flash</div></div>
+      <div class="stat"><div class="num bad">No HTTPS</div><div class="lbl">browsers show “Not secure”; Google penalizes it</div></div>
+      <div class="stat"><div class="num bad">~$300/yr</div><div class="lbl">hosting for what static files can do free</div></div>
+      <div class="stat"><div class="num goodc">~$12/yr</div><div class="lbl">the target: domain renewal only</div></div>
+    </div>
+    <ul class="findings">
+      <li><strong>The custom stamp generator is a Flash app</strong> (<code>.swf</code>) — broken for every visitor for five years. Whatever replaces it, this can't be a straight port.</li>
+      <li><strong>The return-address page is an Etsy widget</strong> (shop&nbsp;ID&nbsp;6652717) using a long-dead embed script. If that Etsy shop still exists, it matters for checkout — see below.</li>
+      <li>Google Analytics is the legacy UA flavor (dead since 2023), the Facebook Like button and StatCounter are relics, and the footer says © 2011.</li>
+      <li>No mobile layout at all — the page demands a 1250px screen. Most of today's shoppers (teachers on phones, evenings) get a broken experience.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="stampchip">The Brand</span>
+    <h2>Keep the name. Sharpen everything around it.</h2>
+    <p>
+      <strong>GradingStamps.com stays the brand.</strong> It's an exact-match domain that
+      says the product in one word, it has age and inbound links Google already trusts,
+      and teachers can spell it over the phone. “MJ's Art Stamps” shouldn't disappear,
+      though — it becomes the <em>maker's mark</em>: “From MJ's Art Stamps, serving
+      teachers for 20+ years” in the header byline and footer. That story — a real
+      family business with 35 years of classroom experience — is the thing big
+      stamp retailers can't copy, so the new site says it out loud.
+    </p>
+    <p>
+      The voice writes teacher-to-teacher: plain, warm, a little wry (the products are
+      cartoon dogs and snails — the site shouldn't sound like enterprise software). The
+      old site already had the perfect tagline buried in its hero copy; we just tighten it:
+    </p>
+    <p style="font-family: var(--display); font-size: 24px; line-height: 1.3; margin: 18px 0;">
+      Stop writing. Stop explaining.<br><span style="color: var(--stamp);">Start stamping.</span>
+    </p>
+    <p>
+      Supporting claims, straight from the product's real specs: <strong>20,000 impressions</strong>
+      before re-inking · no ink pads, no mess · Austrian-made mounts, assembled in the USA.
+    </p>
+  </section>
+
+  <section>
+    <span class="stampchip">The Palette</span>
+    <h2>Red ink on worksheet paper</h2>
+    <p>
+      The palette comes from the world these stamps live in: warm worksheet paper,
+      blue-black pen ink, notebook rule lines, manila folders — and one loud color,
+      the red of a teacher's grading stamp, spent only where it counts (buttons,
+      prices, the word that matters in a headline).
+    </p>
+    <div class="swatches">
+      <div class="swatch"><div class="pad" style="background:#FCFBF7; border-bottom: 1.5px solid #E8E4D8;"></div>
+        <div class="meta"><b>Worksheet</b><span class="hex">#FCFBF7</span><div class="use">Page ground. Warm white, not cream.</div></div></div>
+      <div class="swatch"><div class="pad" style="background:#26304A;"></div>
+        <div class="meta"><b>Pen Ink</b><span class="hex">#26304A</span><div class="use">Text and dark UI. Blue-black, softer than pure black.</div></div></div>
+      <div class="swatch"><div class="pad" style="background:#C8102E;"></div>
+        <div class="meta"><b>Stamp Red</b><span class="hex">#C8102E</span><div class="use">The one accent. CTAs, prices, key words. Never for body text.</div></div></div>
+      <div class="swatch"><div class="pad" style="background:#C7D8E8;"></div>
+        <div class="meta"><b>Rule Blue</b><span class="hex">#C7D8E8</span><div class="use">Borders and dividers — notebook rule lines.</div></div></div>
+      <div class="swatch"><div class="pad" style="background:#F3ECDA;"></div>
+        <div class="meta"><b>Manila</b><span class="hex">#F3ECDA</span><div class="use">Panels, category tabs — the folder in every classroom.</div></div></div>
+      <div class="swatch"><div class="pad" style="background:#E4A93C;"></div>
+        <div class="meta"><b>Gold Star</b><span class="hex">#E4A93C</span><div class="use">Reviews and “bestseller” marks only. Earn it.</div></div></div>
+    </div>
+  </section>
+
+  <section>
+    <span class="stampchip">The Type</span>
+    <h2>Type that could be a stamp</h2>
+    <div class="specimen">
+      <div class="who">Display — Alfa Slab One</div>
+      <div class="sample" style="font-family: var(--display); font-size: 30px; line-height: 1.15;">Grade it. Stamp it.</div>
+      <div class="why">Heavy wood-type slab — the same DNA as the block letters in the existing logo, so the brand evolves instead of restarting. Headlines and prices only.</div>
+    </div>
+    <div class="specimen">
+      <div class="who">Body — Nunito Sans</div>
+      <div class="sample" style="font-size: 17px;">A warm, rounded sans that reads like a friendly note home, not a corporate memo. Handles product copy, navigation, and long text at any size.</div>
+      <div class="why">Friendly without being childish — right for an audience of teachers.</div>
+    </div>
+    <div class="specimen">
+      <div class="who">Stamp voice — Special Elite</div>
+      <div class="sample" style="font-family: var(--typewriter); font-size: 17px; letter-spacing: 1px;">CATALOG № A171 · 1 1/2" × 1 1/4" · PRE-INK MOUNT</div>
+      <div class="why">Inked typewriter for catalog numbers, spec lines, and stamped labels — the product's own voice, used as seasoning.</div>
+    </div>
+  </section>
+
+  <section>
+    <span class="stampchip">The Look</span>
+    <h2>Storefront, mocked with real products</h2>
+    <p>Everything below is the actual scraped data — real artwork, names, sizes, prices:</p>
+    <div class="browser" role="img" aria-label="Mockup of the proposed GradingStamps.com home page">
+      <div class="chrome">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        <span class="urlbar">https://gradingstamps.com</span>
+      </div>
+      <div class="mock">
+        <div class="mock-nav">
+          <span class="mock-logo">GRADING<em>STAMPS</em></span>
+          <span class="navlinks"><span>Shop</span><span>Spanish</span><span>Custom</span><span>Contact</span></span>
+          <span class="cart">Cart · 0</span>
+        </div>
+        <div class="mock-hero">
+          <div>
+            <h3>Stop writing.<br>Stop explaining.<br><em>Start stamping.</em></h3>
+            <p>Pre-ink grading stamps drawn for real classrooms — 20,000 impressions, no ink pad, no mess. Family-made for 20+ years.</p>
+            <span class="btn">Shop all 56 stamps</span>
+            <div class="trust">
+              <span>20,000 impressions</span><span>Austrian-made mounts</span><span>Family business</span>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="data:image/gif;base64,__B64_A171__" alt="Excellent Dog stamp artwork: a cartoon dog beside a sandcastle under the word EXCELLENT">
+          </div>
+        </div>
+        <div class="mock-cards">
+          <div class="pcard">
+            <div class="art"><img src="data:image/gif;base64,__B64_A171__" alt="Excellent Dog stamp"></div>
+            <div class="info">
+              <span class="cat">№ A171</span>
+              <span class="pname">Excellent Dog</span>
+              <span class="size">1 1/2" × 1 1/4" · pre-ink</span>
+              <div class="buyrow"><span class="price">$12.95</span><span class="add">Add to cart</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="art"><img src="data:image/gif;base64,__B64_A146__" alt="Late Work Snail stamp"></div>
+            <div class="info">
+              <span class="cat">№ A146</span>
+              <span class="pname">Late Work Snail</span>
+              <span class="size">1 1/4" × 1 3/4" · pre-ink</span>
+              <div class="buyrow"><span class="price">$12.95</span><span class="add">Add to cart</span></div>
+            </div>
+          </div>
+          <div class="pcard">
+            <div class="art"><img src="data:image/gif;base64,__B64_A121__" alt="Rethink Stars stamp"></div>
+            <div class="info">
+              <span class="cat">№ A121</span>
+              <span class="pname">Rethink Stars</span>
+              <span class="size">2 1/4" × 1 1/4" · pre-ink</span>
+              <div class="buyrow"><span class="price">$12.95</span><span class="add">Add to cart</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="mock-note">
+      Shop page adds a filter rail (Grading · Motivation · Homework · Parent notes · Spanish —
+      derived from the scraped keywords) and a search box. Every stamp gets its own page:
+      big artwork, true-size ruler graphic (the old site's one great idea, kept), specs in the
+      typewriter voice, and one red buy button.
+    </p>
+  </section>
+
+  <section>
+    <span class="stampchip">The Artwork</span>
+    <h2>Refresh the images — without redrawing the product</h2>
+    <p>
+      One rule governs everything here: <strong>the image is the product.</strong> A customer
+      receives a stamp that prints exactly this art, so an AI that “improves” the drawing
+      is misrepresenting the merchandise. The fix isn't generation — it's <strong>vectorization</strong>.
+      The catalog is black-and-white line art, the single best case for tracing to SVG.
+      Here's a real conversion from today's files, not a promise:
+    </p>
+    <div class="imgdemo">
+      <div class="demo-panel">
+        <div class="stage"><img src="data:image/gif;base64,__B64_A107__" alt="No Homework stamp as the original low-resolution GIF, visibly pixelated"></div>
+        <div class="cap"><b>Today: 126px GIF</b>Pixelated on any modern screen; blurry when the browser smooths it.</div>
+      </div>
+      <div class="demo-panel">
+        <div class="stage">__SVG_A107__</div>
+        <div class="cap"><b>Traced to SVG — 5 KB</b>Identical art, razor-sharp at every size, from thumbnail to poster.</div>
+      </div>
+      <div class="demo-panel">
+        <div class="stage redink">__SVG_A107__</div>
+        <div class="cap"><b>Same file, recolored</b>Vectors ink in any color free — instant “see it in red” previews.</div>
+      </div>
+    </div>
+    <div class="verdict">
+      <strong>Plan:</strong> batch-trace all 56 stamps to SVG (scriptable — the proof above took one
+      script). The few pieces with halftone shading get a conservative AI upscale
+      (Real-ESRGAN, run locally, free) instead. Then add one thing the old site never had:
+      a real <strong>photo of the physical pre-ink mount</strong>, shot once and reused across all
+      products so buyers see the object, not just the impression.
+    </div>
+  </section>
+
+  <section>
+    <span class="stampchip">The Checkout</span>
+    <h2>A cart without a server</h2>
+    <p>
+      Static sites can absolutely sell things — the cart just lives with a payment
+      provider instead of on your server. For a 56-product, single-variant catalog:
+    </p>
+    <div class="tablewrap">
+      <table>
+        <tr><th>Option</th><th>Cost</th><th>Fit</th></tr>
+        <tr>
+          <td><span class="pick">Stripe Payment Links ✓</span></td>
+          <td class="num">$0/mo · 2.9% + 30¢ per sale</td>
+          <td>One hosted link per stamp; handles cards, Apple/Google Pay, shipping address collection, receipts. Zero code to maintain — the recommendation.</td>
+        </tr>
+        <tr>
+          <td>Etsy shop (exists already?)</td>
+          <td class="num">$0.20 listing + ~6.5% + processing</td>
+          <td>Pricier per sale, but brings its own buyers searching “teacher stamps.” Worth keeping <em>alongside</em> the site if shop 6652717 is still alive — needs confirming.</td>
+        </tr>
+        <tr>
+          <td>PayPal buttons</td>
+          <td class="num">$0/mo · ~2.99% + fixed</td>
+          <td>Familiar to the retired-teacher demographic; easy to add next to Stripe later.</td>
+        </tr>
+        <tr>
+          <td class="pass">Shopify / Snipcart</td>
+          <td class="num">$5–39/mo</td>
+          <td class="pass">Recreates the monthly-bill problem we're escaping. Pass.</td>
+        </tr>
+      </table>
+    </div>
+    <p style="margin-top: 16px;">
+      <strong>The Flash generator's replacement:</strong> a simple custom-stamp request form —
+      describe the stamp, upload artwork, pick a size — submitted through a free form service
+      (Web3Forms/Formspree) straight to CustomerService@GradingStamps.com with a quote to follow.
+      That matches how custom orders actually get finalized anyway. A fancy in-browser designer
+      can be a phase-two toy if the shop earns it.
+    </p>
+  </section>
+
+  <section>
+    <span class="stampchip">The Stack</span>
+    <h2>Boring technology, free hosting</h2>
+    <p>
+      <strong>Astro</strong> (or plain Eleventy) builds the whole site from
+      <code>products.json</code> at deploy time — 60-odd pure-HTML pages, zero JavaScript
+      shipped except the cart button. Hosted on <strong>Cloudflare Pages</strong> (free tier:
+      unlimited bandwidth, global CDN, automatic HTTPS — fixing the “Not secure” warning on
+      day one). Point the domain there, keep the registrar, cancel the Windows hosting.
+    </p>
+    <div class="tablewrap">
+      <table>
+        <tr><th>Line item</th><th>Today</th><th>Proposed</th></tr>
+        <tr><td>Hosting (ASP.NET Windows server)</td><td class="num">~$300/yr</td><td class="num"><span class="pick">$0</span> (Cloudflare Pages)</td></tr>
+        <tr><td>Domain renewal</td><td class="num">~$15/yr</td><td class="num">~$12/yr</td></tr>
+        <tr><td>HTTPS certificate</td><td class="num">none (!)</td><td class="num"><span class="pick">$0</span>, automatic</td></tr>
+        <tr><td>Payment processing</td><td class="num">gateway fees</td><td class="num">2.9% + 30¢ only when a stamp sells</td></tr>
+        <tr><td><strong>Fixed cost per year</strong></td><td class="num"><strong>$300+</strong></td><td class="num"><strong style="color: var(--good);">~$12</strong> — the price of one stamp</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <span class="stampchip">SEO</span>
+    <h2>Built into the pages, not bolted on</h2>
+    <ul class="check">
+      <li><strong>One URL per stamp</strong> — <code>/stamps/excellent-dog-a171/</code> — so every product can rank for its own searches (“excellent dog rubber stamp”, “late work stamp for teachers”).</li>
+      <li><strong>Product + Offer structured data</strong> (JSON-LD) on every product page: name, image, price, availability → eligible for Google Shopping-style rich results.</li>
+      <li>Titles &amp; meta descriptions generated from the real scraped copy; descriptive alt text from each stamp's keywords.</li>
+      <li>Category landing pages matching how teachers search: grading stamps, homework stamps, Spanish teacher stamps, parent-signature stamps.</li>
+      <li><code>sitemap.xml</code>, canonical tags, Open Graph cards, and <strong>301 redirects</strong> from every old <code>.aspx</code> URL so 15 years of link equity transfers instead of evaporating.</li>
+      <li>Core Web Vitals essentially perfect for free — static HTML + SVG art is as fast as the web gets, and speed is a ranking factor.</li>
+    </ul>
+  </section>
+
+  <section>
+    <span class="stampchip">The Roadmap</span>
+    <h2>Five steps to shut off the server</h2>
+    <ol class="roadmap">
+      <li><b>Approve the direction</b><p>This document: brand, palette, type, checkout choice. Anything here is swappable now, expensive later.</p></li>
+      <li><b>Vectorize the catalog</b><p>Batch-trace all 56 stamps to SVG; AI-upscale the shaded few; photograph one pre-ink mount.</p></li>
+      <li><b>Build the static site</b><p>Astro templates fed by products.json — home, shop with filters, 56 product pages, custom-request form, contact.</p></li>
+      <li><b>Wire up money</b><p>Create Stripe Payment Links per stamp; confirm/link the Etsy shop; test an end-to-end order.</p></li>
+      <li><b>Launch &amp; cancel</b><p>Deploy to Cloudflare Pages, point the domain, 301-map the old URLs, verify in Search Console — then cancel the Windows hosting and pocket the $300/yr.</p></li>
+    </ol>
+  </section>
+
+  <section>
+    <span class="stampchip">Open Questions</span>
+    <h2>Things only you two can answer</h2>
+    <ul class="qa">
+      <li>Is the <strong>Etsy shop</strong> (ID 6652717) still active, and does your dad still fulfill orders? This decides whether Etsy is a second sales channel or history.</li>
+      <li>Are the scraped <strong>prices current</strong> ($8.49–$19.95), and is the Spanish line staying?</li>
+      <li>Who holds the <strong>domain registrar login</strong> — and is anything else (email?) running on that Windows host before we cancel it?</li>
+      <li>Keep the phone number on the site? <strong>(888) 288-2869</strong> presumably has a cost too.</li>
+    </ul>
+  </section>
+
+  <footer>GRADINGSTAMPS.COM REBRAND · SCRAPED, AUDITED &amp; PROPOSED AUG 27 2026</footer>
+</div>
