@@ -1,9 +1,8 @@
 """Single place for everything an owner might need to change."""
 
-# CONFIRM before launch: the PayPal account email that receives payments.
-# Until confirmed with Dad, this is a best-guess placeholder — payments sent
-# to an email with no PayPal account sit "unclaimed" and auto-refund in 30 days.
-PAYPAL_BUSINESS = "CustomerService@GradingStamps.com"
+# The PayPal account that receives payments — recovered from the old site's
+# working ViewCart.aspx (its cart-upload form posted business=MJARTSTAMP@AOL.COM).
+PAYPAL_BUSINESS = "MJARTSTAMP@AOL.COM"
 
 SITE_URL = "https://www.gradingstamps.com"   # canonical, no trailing slash
 SITE_NAME = "GradingStamps"

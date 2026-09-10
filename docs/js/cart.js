@@ -1,9 +1,9 @@
 /* GradingStamps on-site cart — localStorage + one PayPal cart-upload post
-   at checkout. CustomerService@GradingStamps.com and https://www.gradingstamps.com are injected by site/build.py.      */
+   at checkout. MJARTSTAMP@AOL.COM and https://www.gradingstamps.com are injected by site/build.py.      */
 (function () {
   "use strict";
   var KEY = "gs_cart";
-  var BUSINESS = "CustomerService@GradingStamps.com";
+  var BUSINESS = "MJARTSTAMP@AOL.COM";
   var SITE = "https://www.gradingstamps.com";
 
   function load() {
