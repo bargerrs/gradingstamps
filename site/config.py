@@ -4,6 +4,12 @@
 # working ViewCart.aspx (its cart-upload form posted business=MJARTSTAMP@AOL.COM).
 PAYPAL_BUSINESS = "MJARTSTAMP@AOL.COM"
 
+# Modern PayPal JS-SDK checkout. Get this from developer.paypal.com →
+# Apps & Credentials → Live → Create App → "Client ID" (a public identifier,
+# safe to publish). While empty, checkout falls back to the legacy cart-upload
+# form, which PayPal is sunsetting and now often fails with GENERIC_ERROR.
+PAYPAL_CLIENT_ID = ""
+
 SITE_URL = "https://www.gradingstamps.com"   # canonical, no trailing slash
 SITE_NAME = "GradingStamps"
 DOMAIN = "www.gradingstamps.com"             # written to docs/CNAME

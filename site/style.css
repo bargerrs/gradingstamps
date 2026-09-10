@@ -650,3 +650,9 @@ footer.site .maker {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.cs-err {
+  color: var(--stamp);
+  font-size: 13.5px;
+  margin: 10px 0 0;
+}

@@ -226,7 +226,9 @@ def main() -> None:
     shutil.copy(ROOT / "site" / "style.css", DOCS / "css" / "style.css")
     (DOCS / "js").mkdir(parents=True, exist_ok=True)
     cart_js = (ROOT / "site" / "cart.js").read_text(encoding="utf-8")
-    cart_js = cart_js.replace("__PAYPAL__", C.PAYPAL_BUSINESS).replace("__SITE__", C.SITE_URL)
+    cart_js = (cart_js.replace("__PAYPAL__", C.PAYPAL_BUSINESS)
+               .replace("__SITE__", C.SITE_URL)
+               .replace("__PAYPAL_CLIENT_ID__", getattr(C, "PAYPAL_CLIENT_ID", "")))
     (DOCS / "js" / "cart.js").write_text(cart_js, encoding="utf-8")
     import hashlib
     ASSET_V["css"] = hashlib.sha1((DOCS / "css" / "style.css").read_bytes()).hexdigest()[:8]

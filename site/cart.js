@@ -5,6 +5,7 @@
   var KEY = "gs_cart";
   var BUSINESS = "__PAYPAL__";
   var SITE = "__SITE__";
+  var CLIENT_ID = "__PAYPAL_CLIENT_ID__";
 
   function load() {
     try { return JSON.parse(localStorage.getItem(KEY)) || {}; }
@@ -102,7 +103,9 @@
           '<div class="cs-line"><span>' + items + (items === 1 ? " stamp" : " stamps") +
             "</span><span>" + money(total) + "</span></div>" +
           '<div class="cs-total"><span>Total</span><b>' + money(total) + "</b></div>" +
-          '<button class="btn cs-checkout" id="checkoutBtn">Check out with PayPal</button>' +
+          (CLIENT_ID
+            ? '<div id="paypalButtons"></div><p class="cs-err" id="ppError" hidden></p>'
+            : '<button class="btn cs-checkout" id="checkoutBtn">Check out with PayPal</button>') +
           '<p class="cs-note">Secure checkout — PayPal or any card.<br>' +
             "Shipping &amp; tax are shown before you pay.</p>" +
           '<a class="cs-keep" href="' + shop + '">← Keep shopping</a>' +
@@ -140,8 +143,62 @@
     f.submit();
   }
 
+  function mountSdkButtons() {
+    if (!CLIENT_ID || !document.getElementById("paypalButtons")) return;
+    function mount() {
+      var c = load();
+      var ids = Object.keys(c);
+      if (!ids.length) return;
+      var total = 0;
+      var items = ids.map(function (id) {
+        total += c[id].price * c[id].qty;
+        return {
+          name: (c[id].name + " (" + id + ")").slice(0, 120),
+          sku: id,
+          unit_amount: { currency_code: "USD", value: c[id].price.toFixed(2) },
+          quantity: String(c[id].qty)
+        };
+      });
+      window.paypal.Buttons({
+        style: { color: "gold", shape: "rect", label: "checkout" },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                currency_code: "USD",
+                value: total.toFixed(2),
+                breakdown: { item_total: { currency_code: "USD", value: total.toFixed(2) } }
+              },
+              items: items
+            }]
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function () {
+            location.href = SITE + "/thanks/";
+          });
+        },
+        onError: function () {
+          var e = document.getElementById("ppError");
+          if (e) {
+            e.textContent = "PayPal couldn't start checkout. Please try again, or " +
+                            "email us and we'll take your order directly.";
+            e.hidden = false;
+          }
+        }
+      }).render("#paypalButtons");
+    }
+    if (window.paypal) { mount(); return; }
+    var sc = document.createElement("script");
+    sc.src = "https://www.paypal.com/sdk/js?client-id=" + encodeURIComponent(CLIENT_ID) +
+             "&currency=USD&intent=capture";
+    sc.onload = mount;
+    document.head.appendChild(sc);
+  }
+
   if (root) {
     render();
+    mountSdkButtons();
     root.addEventListener("click", function (e) {
       var t = e.target;
       if (t.id === "checkoutBtn") { checkout(); return; }
@@ -156,6 +213,7 @@
       if (act === "remove") delete c[id];
       save(c);
       render();
+      mountSdkButtons();
     });
   }
 
