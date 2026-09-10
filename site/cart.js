@@ -36,7 +36,8 @@
     var c = load();
     var id = b.getAttribute("data-id");
     if (!c[id]) c[id] = { name: b.getAttribute("data-name"),
-                          price: parseFloat(b.getAttribute("data-price")), qty: 0 };
+                          price: parseFloat(b.getAttribute("data-price")),
+                          img: b.getAttribute("data-img") || "", qty: 0 };
     c[id].qty += 1;
     save(c);
     if (!b.dataset.orig) b.dataset.orig = b.textContent;
@@ -55,33 +56,52 @@
   function render() {
     var c = load();
     var ids = Object.keys(c);
+    var shop = root.getAttribute("data-shop");
+    var imgbase = root.getAttribute("data-imgbase") || "../img/stamps/";
     if (!ids.length) {
-      root.innerHTML = '<p>Your cart is empty.</p>' +
-        '<p><a class="btn" href="' + root.getAttribute("data-shop") + '">Browse the catalog</a></p>';
+      root.innerHTML =
+        '<div class="cart-empty">' +
+        '<img src="' + imgbase + 'A136_happy-face.svg" alt="" width="150" height="150">' +
+        "<h2>Nothing stamped yet</h2>" +
+        "<p>Your cart is empty — the catalog is full of good marks.</p>" +
+        '<a class="btn" href="' + shop + '">Browse the stamps</a></div>';
       return;
     }
-    var total = 0;
+    var total = 0, items = 0;
     var rows = ids.map(function (id) {
       var it = c[id];
       var line = it.price * it.qty;
       total += line;
+      items += it.qty;
+      var src = it.img && it.img.indexOf("/") === -1 ? imgbase + it.img : it.img;
+      var thumb = src ? '<img src="' + src + '" alt="" loading="lazy">' : "";
       return '<div class="cart-row" data-id="' + id + '">' +
-        '<div class="cr-name"><b>' + it.name + '</b><span class="cr-id">№ ' + id + " · " + money(it.price) + ' each</span></div>' +
-        '<div class="cr-qty">' +
-          '<button class="qbtn" data-act="minus" aria-label="Remove one">−</button>' +
-          '<span class="qnum">' + it.qty + "</span>" +
-          '<button class="qbtn" data-act="plus" aria-label="Add one">+</button>' +
-        "</div>" +
-        '<div class="cr-line">' + money(line) + "</div>" +
-        '<button class="cr-remove" data-act="remove" aria-label="Remove ' + it.name + '">×</button>' +
-        "</div>";
+        '<div class="cr-thumb">' + thumb + "</div>" +
+        '<div class="cr-name"><b>' + it.name + "</b>" +
+          '<span class="cr-id">№ ' + id + " · " + money(it.price) + " each</span></div>" +
+        '<div class="cr-controls">' +
+          '<div class="cr-qty" role="group" aria-label="Quantity for ' + it.name + '">' +
+            '<button class="qbtn" data-act="minus" aria-label="Remove one">−</button>' +
+            '<span class="qnum">' + it.qty + "</span>" +
+            '<button class="qbtn" data-act="plus" aria-label="Add one">+</button>' +
+          "</div>" +
+          '<span class="cr-line">' + money(line) + "</span>" +
+          '<button class="cr-remove" data-act="remove" aria-label="Remove ' + it.name +
+            ' from cart" title="Remove">×</button>' +
+        "</div></div>";
     }).join("");
     root.innerHTML =
-      '<div class="cart-list">' + rows + "</div>" +
-      '<div class="cart-total"><span>Total</span><b>' + money(total) + "</b></div>" +
-      '<p class="cart-ship">Shipping and any tax are shown on the PayPal page before you pay.</p>' +
-      '<button class="btn" id="checkoutBtn">Check out with PayPal</button> ' +
-      '<a class="btn ghost" href="' + root.getAttribute("data-shop") + '">Keep shopping</a>';
+      '<div class="cart-grid">' +
+        '<div class="cart-list">' + rows + "</div>" +
+        '<aside class="cart-side">' +
+          '<div class="cs-line"><span>' + items + (items === 1 ? " stamp" : " stamps") +
+            "</span><span>" + money(total) + "</span></div>" +
+          '<div class="cs-total"><span>Total</span><b>' + money(total) + "</b></div>" +
+          '<button class="btn cs-checkout" id="checkoutBtn">Check out with PayPal</button>' +
+          '<p class="cs-note">Secure checkout — PayPal or any card.<br>' +
+            "Shipping &amp; tax are shown before you pay.</p>" +
+          '<a class="cs-keep" href="' + shop + '">← Keep shopping</a>' +
+        "</aside></div>";
   }
 
   function checkout() {

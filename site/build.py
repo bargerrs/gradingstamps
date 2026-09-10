@@ -24,6 +24,8 @@ GIF_DIR = ROOT / "assets" / "stamps"
 
 E = html.escape
 
+ASSET_V = {"css": "", "js": ""}  # content hashes, set in main() after assets are written
+
 # --------------------------------------------------------------- categories
 CATEGORIES = {
     "grading": ("grading-rubrics", "Grading & Rubrics",
@@ -121,7 +123,8 @@ def description_for(p: dict) -> str:
 def paypal_form(p: dict, small: bool = False) -> str:
     btn = "btn small" if small else "btn"
     return (f'<button type="button" class="{btn} add-to-cart" data-id="{p["id"]}" '
-            f'data-name="{E(p["name"])}" data-price="{price_of(p):.2f}">Add to cart</button>')
+            f'data-name="{E(p["name"])}" data-price="{price_of(p):.2f}" '
+            f'data-img="{img_stem(p)}.svg">Add to cart</button>')
 
 
 def product_card(p: dict, R: str) -> str:
@@ -169,8 +172,8 @@ def shell(*, R: str, title: str, desc: str, canonical: str, body: str,
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:wght@400;700;800&family=Special+Elite&display=swap">
-<link rel="stylesheet" href="{R}css/style.css">
-<script src="{R}js/cart.js" defer></script>
+<link rel="stylesheet" href="{R}css/style.css?v={ASSET_V["css"]}">
+<script src="{R}js/cart.js?v={ASSET_V["js"]}" defer></script>
 {extra_head}</head>
 <body>
 <header class="site"><div class="wrap masthead">
@@ -225,6 +228,9 @@ def main() -> None:
     cart_js = (ROOT / "site" / "cart.js").read_text(encoding="utf-8")
     cart_js = cart_js.replace("__PAYPAL__", C.PAYPAL_BUSINESS).replace("__SITE__", C.SITE_URL)
     (DOCS / "js" / "cart.js").write_text(cart_js, encoding="utf-8")
+    import hashlib
+    ASSET_V["css"] = hashlib.sha1((DOCS / "css" / "style.css").read_bytes()).hexdigest()[:8]
+    ASSET_V["js"] = hashlib.sha1(cart_js.encode()).hexdigest()[:8]
     for svg in SVG_DIR.glob("*.svg"):
         shutil.copy(svg, DOCS / "img" / "stamps" / svg.name)
     for gif in GIF_DIR.glob("*.gif"):
@@ -447,10 +453,10 @@ def main() -> None:
 
     # ---------------- cart ----------------
     cart_body = """
-<main><div class="wrap page">
+<main><div class="wrap page cartpage">
   <span class="stampchip">Your cart</span>
   <h1>Ready to stamp?</h1>
-  <div id="cartRoot" data-shop="../shop/"><p>Loading your cart…</p></div>
+  <div id="cartRoot" data-shop="../shop/" data-imgbase="../img/stamps/"><p>Loading your cart…</p></div>
   <noscript><p>The cart needs JavaScript. You can also order by phone at
   """ + f'{C.PHONE_DISPLAY} or email <a href="mailto:{C.CONTACT_EMAIL}">{C.CONTACT_EMAIL}</a>.' + """</p></noscript>
 </div></main>"""
