@@ -196,6 +196,81 @@ nav.main a.cart:hover { background: var(--stamp-dark); }
   background: var(--card);
 }
 
+/* ---------- cart ---------- */
+.cart-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 19px;
+  height: 19px;
+  padding: 0 5px;
+  margin-left: 4px;
+  border-radius: 999px;
+  background: #FFF;
+  color: var(--stamp);
+  font-size: 12px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.btn.add-to-cart.added { background: var(--good); box-shadow: 0 2px 0 #1E4A33; }
+.cart-list { border-top: 2px solid var(--rule); margin-top: 10px; }
+.cart-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 14px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1.5px solid var(--rule);
+}
+.cr-name b { font-size: 15.5px; }
+.cr-id {
+  display: block;
+  font-family: var(--typewriter);
+  font-size: 11.5px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.cr-qty { display: flex; align-items: center; gap: 8px; }
+.qbtn {
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid var(--rule);
+  border-radius: 7px;
+  background: var(--card);
+  color: var(--ink);
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  line-height: 1;
+}
+.qbtn:hover { border-color: var(--ink-soft); }
+.qnum { min-width: 20px; text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; }
+.cr-line { font-family: var(--display); font-size: 16px; min-width: 64px; text-align: right; }
+.cr-remove {
+  border: 0;
+  background: none;
+  color: var(--ink-soft);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.cr-remove:hover { color: var(--stamp); background: var(--stamp-soft); }
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px 0 6px;
+  font-size: 17px;
+}
+.cart-total b { font-family: var(--display); font-size: 26px; }
+.cart-ship { font-size: 13.5px; color: var(--ink-soft); margin: 4px 0 18px; }
+@media (max-width: 560px) {
+  .cart-row { grid-template-columns: 1fr auto; }
+  .cr-line { grid-column: 2; text-align: right; }
+  .cr-remove { grid-column: 2; justify-self: end; }
+}
+
 /* ---------- section headings ---------- */
 .stampchip {
   display: inline-block;

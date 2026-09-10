@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:wght@400;700;800&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="../../css/style.css">
+<script src="../../js/cart.js" defer></script>
 </head>
 <body>
 <header class="site"><div class="wrap masthead">
@@ -27,7 +28,7 @@
   <span class="byline">From MJ&#x27;s Art Stamps · 20+ years</span>
   <nav class="main" aria-label="Main">
     <a href="../../shop/" aria-current="page">Shop</a> <a href="../../shop/spanish/">Spanish</a> <a href="../../contact/">Contact</a>
-    <a class="cart" href="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&display=1&business=CustomerService@GradingStamps.com">View cart</a>
+    <a class="cart" href="../../cart/">Cart <span class="cart-count" hidden>0</span></a>
   </nav>
 </div></header>
 
@@ -43,19 +44,7 @@
     <span class="cat">№ A101 · Homework &amp; Late Work</span>
     <a class="pname" href="../../stamps/absent-make-up-work-a101/">Absent Make-up Work</a>
     <span class="size">2&Prime; × 1&Prime; · pre-ink mount</span>
-    <div class="buyrow"><span class="price">$8.49</span><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="CustomerService@GradingStamps.com">
-<input type="hidden" name="item_name" value="Absent Make-up Work — pre-ink teacher stamp (A101)">
-<input type="hidden" name="item_number" value="A101">
-<input type="hidden" name="amount" value="8.49">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="https://www.gradingstamps.com/shop/">
-<input type="hidden" name="return" value="https://www.gradingstamps.com/thanks/">
-<input type="hidden" name="cancel_return" value="https://www.gradingstamps.com/shop/">
-<button type="submit" class="btn small">Add to cart</button>
-</form></div>
+    <div class="buyrow"><span class="price">$8.49</span><button type="button" class="btn small add-to-cart" data-id="A101" data-name="Absent Make-up Work" data-price="8.49">Add to cart</button></div>
   </div>
 </div><div class="pcard">
   <a class="art" href="../../stamps/no-homework-a107/" aria-label="No Homework">
@@ -64,19 +53,7 @@
     <span class="cat">№ A107 · Homework &amp; Late Work</span>
     <a class="pname" href="../../stamps/no-homework-a107/">No Homework</a>
     <span class="size">1 1/4&Prime; × 1 1/4&Prime; · pre-ink mount</span>
-    <div class="buyrow"><span class="price">$12.95</span><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="CustomerService@GradingStamps.com">
-<input type="hidden" name="item_name" value="No Homework — pre-ink teacher stamp (A107)">
-<input type="hidden" name="item_number" value="A107">
-<input type="hidden" name="amount" value="12.95">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="https://www.gradingstamps.com/shop/">
-<input type="hidden" name="return" value="https://www.gradingstamps.com/thanks/">
-<input type="hidden" name="cancel_return" value="https://www.gradingstamps.com/shop/">
-<button type="submit" class="btn small">Add to cart</button>
-</form></div>
+    <div class="buyrow"><span class="price">$12.95</span><button type="button" class="btn small add-to-cart" data-id="A107" data-name="No Homework" data-price="12.95">Add to cart</button></div>
   </div>
 </div><div class="pcard">
   <a class="art" href="../../stamps/no-work-no-credit-a108/" aria-label="No Work No Credit">
@@ -85,19 +62,7 @@
     <span class="cat">№ A108 · Homework &amp; Late Work</span>
     <a class="pname" href="../../stamps/no-work-no-credit-a108/">No Work No Credit</a>
     <span class="size">1 1/4&Prime; × 1 1/4&Prime; · pre-ink mount</span>
-    <div class="buyrow"><span class="price">$12.95</span><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="CustomerService@GradingStamps.com">
-<input type="hidden" name="item_name" value="No Work No Credit — pre-ink teacher stamp (A108)">
-<input type="hidden" name="item_number" value="A108">
-<input type="hidden" name="amount" value="12.95">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="https://www.gradingstamps.com/shop/">
-<input type="hidden" name="return" value="https://www.gradingstamps.com/thanks/">
-<input type="hidden" name="cancel_return" value="https://www.gradingstamps.com/shop/">
-<button type="submit" class="btn small">Add to cart</button>
-</form></div>
+    <div class="buyrow"><span class="price">$12.95</span><button type="button" class="btn small add-to-cart" data-id="A108" data-name="No Work No Credit" data-price="12.95">Add to cart</button></div>
   </div>
 </div><div class="pcard">
   <a class="art" href="../../stamps/late-work-snail-a146/" aria-label="Late Work Snail">
@@ -106,19 +71,7 @@
     <span class="cat">№ A146 · Homework &amp; Late Work</span>
     <a class="pname" href="../../stamps/late-work-snail-a146/">Late Work Snail</a>
     <span class="size">1 1/4&Prime; × 1 3/4&Prime; · pre-ink mount</span>
-    <div class="buyrow"><span class="price">$12.95</span><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="CustomerService@GradingStamps.com">
-<input type="hidden" name="item_name" value="Late Work Snail — pre-ink teacher stamp (A146)">
-<input type="hidden" name="item_number" value="A146">
-<input type="hidden" name="amount" value="12.95">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="https://www.gradingstamps.com/shop/">
-<input type="hidden" name="return" value="https://www.gradingstamps.com/thanks/">
-<input type="hidden" name="cancel_return" value="https://www.gradingstamps.com/shop/">
-<button type="submit" class="btn small">Add to cart</button>
-</form></div>
+    <div class="buyrow"><span class="price">$12.95</span><button type="button" class="btn small add-to-cart" data-id="A146" data-name="Late Work Snail" data-price="12.95">Add to cart</button></div>
   </div>
 </div><div class="pcard">
   <a class="art" href="../../stamps/homework-a170/" aria-label="Homework">
@@ -127,19 +80,7 @@
     <span class="cat">№ A170 · Homework &amp; Late Work</span>
     <a class="pname" href="../../stamps/homework-a170/">Homework</a>
     <span class="size">2&Prime; × 1 1/4&Prime; · pre-ink mount</span>
-    <div class="buyrow"><span class="price">$12.95</span><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="CustomerService@GradingStamps.com">
-<input type="hidden" name="item_name" value="Homework — pre-ink teacher stamp (A170)">
-<input type="hidden" name="item_number" value="A170">
-<input type="hidden" name="amount" value="12.95">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="https://www.gradingstamps.com/shop/">
-<input type="hidden" name="return" value="https://www.gradingstamps.com/thanks/">
-<input type="hidden" name="cancel_return" value="https://www.gradingstamps.com/shop/">
-<button type="submit" class="btn small">Add to cart</button>
-</form></div>
+    <div class="buyrow"><span class="price">$12.95</span><button type="button" class="btn small add-to-cart" data-id="A170" data-name="Homework" data-price="12.95">Add to cart</button></div>
   </div>
 </div><div class="pcard">
   <a class="art" href="../../stamps/unfinished-assignment-a178/" aria-label="Unfinished Assignment">
@@ -148,19 +89,7 @@
     <span class="cat">№ A178 · Homework &amp; Late Work</span>
     <a class="pname" href="../../stamps/unfinished-assignment-a178/">Unfinished Assignment</a>
     <span class="size">3&Prime; × 1 1/2&Prime; · pre-ink mount</span>
-    <div class="buyrow"><span class="price">$19.95</span><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="CustomerService@GradingStamps.com">
-<input type="hidden" name="item_name" value="Unfinished Assignment — pre-ink teacher stamp (A178)">
-<input type="hidden" name="item_number" value="A178">
-<input type="hidden" name="amount" value="19.95">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="https://www.gradingstamps.com/shop/">
-<input type="hidden" name="return" value="https://www.gradingstamps.com/thanks/">
-<input type="hidden" name="cancel_return" value="https://www.gradingstamps.com/shop/">
-<button type="submit" class="btn small">Add to cart</button>
-</form></div>
+    <div class="buyrow"><span class="price">$19.95</span><button type="button" class="btn small add-to-cart" data-id="A178" data-name="Unfinished Assignment" data-price="19.95">Add to cart</button></div>
   </div>
 </div></div>
 </div></section></main>

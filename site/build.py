@@ -118,25 +118,10 @@ def description_for(p: dict) -> str:
 
 
 # ----------------------------------------------------------- shared markup
-VIEW_CART = (f"https://www.paypal.com/cgi-bin/webscr?cmd=_cart&display=1"
-             f"&business={C.PAYPAL_BUSINESS}")
-
-
 def paypal_form(p: dict, small: bool = False) -> str:
     btn = "btn small" if small else "btn"
-    return f"""<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_cart"><input type="hidden" name="add" value="1">
-<input type="hidden" name="business" value="{E(C.PAYPAL_BUSINESS)}">
-<input type="hidden" name="item_name" value="{E(p['name'])} — pre-ink teacher stamp ({p['id']})">
-<input type="hidden" name="item_number" value="{p['id']}">
-<input type="hidden" name="amount" value="{price_of(p):.2f}">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="no_note" value="1">
-<input type="hidden" name="shopping_url" value="{C.SITE_URL}/shop/">
-<input type="hidden" name="return" value="{C.SITE_URL}/thanks/">
-<input type="hidden" name="cancel_return" value="{C.SITE_URL}/shop/">
-<button type="submit" class="{btn}">Add to cart</button>
-</form>"""
+    return (f'<button type="button" class="{btn} add-to-cart" data-id="{p["id"]}" '
+            f'data-name="{E(p["name"])}" data-price="{price_of(p):.2f}">Add to cart</button>')
 
 
 def product_card(p: dict, R: str) -> str:
@@ -185,6 +170,7 @@ def shell(*, R: str, title: str, desc: str, canonical: str, body: str,
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito+Sans:wght@400;700;800&family=Special+Elite&display=swap">
 <link rel="stylesheet" href="{R}css/style.css">
+<script src="{R}js/cart.js" defer></script>
 {extra_head}</head>
 <body>
 <header class="site"><div class="wrap masthead">
@@ -196,7 +182,7 @@ def shell(*, R: str, title: str, desc: str, canonical: str, body: str,
   <span class="byline">From {E(C.MAKER)} · 20+ years</span>
   <nav class="main" aria-label="Main">
     {' '.join(nav)}
-    <a class="cart" href="{VIEW_CART}">View cart</a>
+    <a class="cart" href="{R}cart/">Cart <span class="cart-count" hidden>0</span></a>
   </nav>
 </div></header>
 {body}
@@ -235,6 +221,10 @@ def main() -> None:
     (DOCS / "img" / "stamps" / "orig").mkdir(parents=True)
 
     shutil.copy(ROOT / "site" / "style.css", DOCS / "css" / "style.css")
+    (DOCS / "js").mkdir(parents=True, exist_ok=True)
+    cart_js = (ROOT / "site" / "cart.js").read_text(encoding="utf-8")
+    cart_js = cart_js.replace("__PAYPAL__", C.PAYPAL_BUSINESS).replace("__SITE__", C.SITE_URL)
+    (DOCS / "js" / "cart.js").write_text(cart_js, encoding="utf-8")
     for svg in SVG_DIR.glob("*.svg"):
         shutil.copy(svg, DOCS / "img" / "stamps" / svg.name)
     for gif in GIF_DIR.glob("*.gif"):
@@ -412,7 +402,7 @@ def main() -> None:
     <p class="desc">{desc_text}</p>
     <div class="buy-panel">
       {paypal_form(p)}
-      <a href="{VIEW_CART}">View cart</a> · checkout by PayPal or card
+      <a href="{R}cart/">View cart</a> · checkout by PayPal or card
       <ul class="mini-facts">
         <li>No ink pad — clean, even impressions</li>
         <li>About {C.IMPRESSIONS} impressions, re-inkable</li>
@@ -455,6 +445,20 @@ def main() -> None:
         canonical=page_url("contact/index.html"), body=contact_body, active="contact"))
     urls.append(page_url("contact/index.html"))
 
+    # ---------------- cart ----------------
+    cart_body = """
+<main><div class="wrap page">
+  <span class="stampchip">Your cart</span>
+  <h1>Ready to stamp?</h1>
+  <div id="cartRoot" data-shop="../shop/"><p>Loading your cart…</p></div>
+  <noscript><p>The cart needs JavaScript. You can also order by phone at
+  """ + f'{C.PHONE_DISPLAY} or email <a href="mailto:{C.CONTACT_EMAIL}">{C.CONTACT_EMAIL}</a>.' + """</p></noscript>
+</div></main>"""
+    write("cart/index.html", shell(
+        R="../", title="Your Cart | GradingStamps",
+        desc="Review your stamp order and check out securely with PayPal.",
+        canonical=page_url("cart/index.html"), body=cart_body))
+
     # ---------------- thanks ----------------
     thanks_body = """
 <main><div class="wrap page">
@@ -464,6 +468,7 @@ def main() -> None:
   stamps on their way. If anything looks off, just reply to the receipt or
   <a href="../contact/">contact us</a>.</p>
   <p><a class="btn ghost" href="../shop/">Keep browsing</a></p>
+  <span id="clearCart" hidden></span>
 </div></main>"""
     write("thanks/index.html", shell(
         R="../", title="Thank You | GradingStamps",
