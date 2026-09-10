@@ -20,6 +20,11 @@
     return n;
   }
   function money(x) { return "$" + x.toFixed(2); }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (ch) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch];
+    });
+  }
 
   function updateBadge() {
     var el = document.querySelector(".cart-count");
@@ -73,20 +78,20 @@
       var line = it.price * it.qty;
       total += line;
       items += it.qty;
-      var src = it.img && it.img.indexOf("/") === -1 ? imgbase + it.img : it.img;
+      var src = it.img && /^[A-Za-z0-9._-]+$/.test(it.img) ? imgbase + it.img : "";
       var thumb = src ? '<img src="' + src + '" alt="" loading="lazy">' : "";
       return '<div class="cart-row" data-id="' + id + '">' +
         '<div class="cr-thumb">' + thumb + "</div>" +
-        '<div class="cr-name"><b>' + it.name + "</b>" +
+        '<div class="cr-name"><b>' + esc(it.name) + "</b>" +
           '<span class="cr-id">№ ' + id + " · " + money(it.price) + " each</span></div>" +
         '<div class="cr-controls">' +
-          '<div class="cr-qty" role="group" aria-label="Quantity for ' + it.name + '">' +
+          '<div class="cr-qty" role="group" aria-label="Quantity for ' + esc(it.name) + '">' +
             '<button class="qbtn" data-act="minus" aria-label="Remove one">−</button>' +
             '<span class="qnum">' + it.qty + "</span>" +
             '<button class="qbtn" data-act="plus" aria-label="Add one">+</button>' +
           "</div>" +
           '<span class="cr-line">' + money(line) + "</span>" +
-          '<button class="cr-remove" data-act="remove" aria-label="Remove ' + it.name +
+          '<button class="cr-remove" data-act="remove" aria-label="Remove ' + esc(it.name) +
             ' from cart" title="Remove">×</button>' +
         "</div></div>";
     }).join("");
